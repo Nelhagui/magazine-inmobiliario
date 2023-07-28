@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import "./cardPropiedades.css"
 
 function CardPropiedades() {
-    let window
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    const [windowWidth, setWindoWidth] = useState({
+        width: window.innerWidth,
+      });
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth)
+      setWindoWidth(window.innerWidth)
     }
 
     window.addEventListener('resize', handleResize)
