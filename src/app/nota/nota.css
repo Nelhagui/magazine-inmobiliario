@@ -1,0 +1,68 @@
+.nota-text p, .share p, .nextprev-post p{
+    color: #707a88;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 36px; 
+    color: #203656; 
+    line-height: 1.2;
+}
+
+.nota-text h3 {
+    color: #203656;
+    line-height: 1.4;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.nextprev-post {
+    border: solid 1px #ebebeb;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.social-icons li a{
+    transition: all ease .5s;
+    color: #203656
+}
+
+.social-icons li a:hover{
+    color: #e63946
+}
+
+.tags a {
+    border: solid 1px #ebebeb;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px 14px;
+    margin: 4px 0;
+    margin-right: 5px;
+}
+
+.tags.nota a {
+    color: #8f9bad;
+}
+
+.tags a:hover {
+    color: #e63946;
+    outline: 0;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border: solid 1px #e63946;
+}
+
+@media screen and (max-width: 990px) {
+    .nota-sidebar, .nota-main {
+        width: 100% !important;
+    }
+}

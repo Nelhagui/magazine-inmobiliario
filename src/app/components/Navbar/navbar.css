@@ -1,0 +1,152 @@
+/* Menú */
+nav ul li {
+    list-style: none;
+}
+
+nav div ul li .nav-item {
+    transition: all ease 0.3s;
+}
+
+.nav-height {
+    box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+}
+
+.nav-item {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.logo {
+    color: #000;
+    transition: all ease 0.3s
+}
+
+.logo:hover {
+    color: #e63946
+}
+
+.nav-item:hover {
+    color: #e63946;
+}
+
+.bg-menu {
+    background-color: #f3f7f8;;
+}
+
+.offcanvas {
+    max-width: 310px !important
+}
+
+.canvas {
+    background: #fff;
+    height: 100vh;
+    padding: 40px;
+    width: 300px;
+}
+
+.offcanvas-header button {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    padding: 0.25em;
+    color: #000;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: .4;
+    right: 30px;
+    top: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.offcanvas-header logo {
+    margin-bottom: 80px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.canvas-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.canvas-menu li {
+    padding: 0;
+    position: relative;
+    list-style: none;
+    transition: all .2s ease-in-out;
+}
+
+.canvas-li:after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    background: #ebebeb;
+    background: -webkit-linear-gradient(left,#ebebeb 0%,transparent 100%);
+    background: linear-gradient(to right,#ebebeb 0%,transparent 100%);
+}
+
+.canvas-menu li a{
+    color: #203656;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.switch {
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    font-size: 10px;
+    display: inline-block;
+    padding: 10px;
+    line-height: 1;
+    cursor: pointer;
+    color: #e63946;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.dropdownn {
+    position: relative
+}
+
+.dropdown-menuu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .05rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    transition: all ease .8s;
+    z-index: 2000;
+}
+
+.dropdownn > .pruebaa:hover + .dropdown-menuu {
+    opacity: 1
+}
+
+.dropdown-menuu:hover {
+    opacity: 1
+}
+
+.dropdown-item {
+    color: black
+}
+
+@media screen and (min-width: 800px) {
+    .nav-height {
+        min-height: 70px;
+    }
+}

@@ -25,38 +25,35 @@ p {
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none
 }
 
-         
-.btn-grad {
-  background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;            
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
+.btn-home {
+	color: #fff;
+	padding: 9.5px 36px;
+	background: #e63946;
+	background: -webkit-linear-gradient(left, #e63946 0%, #ffa387 51%, #e63946 100%);
+	background: linear-gradient(to right, #e63946 0%, #ffa387 51%, #e63946 100%);
+	background-size: 200% auto;
+	border-radius: 25px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
 
+
+.btn-home:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
 
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -121,6 +118,148 @@ button {
 
 .bg-white {
   background-color: #fff;
+}
+
+/* BLOG CSS*/
+
+.container-xl {
+  max-width: 1140px;
+}
+
+.search-blog-box {
+  position: relative;
+
+}
+
+.search-blog-form {
+  height: 40px;
+  border: 1px solid #cbf3ee;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.search-blog-text {
+  font-size: 16px;
+  color: #ddd;
+  border-width: 0;
+  background: transparent;
+}
+
+.search-blog-box input[type="text"] {
+  width: 90%;
+  padding: 8px 0 12px 1em;
+  color: #333;
+  outline: none;
+}
+
+.search-blog-button {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 80px;
+  font-size: 14px;
+  color: #656;
+  text-align: center;
+  line-height: 4px;
+  border-width: 0;
+  background-color: #cbf3ee;
+  -webkit-border-radius: 0px 15px 15px;
+  -moz-border-radius: 0px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.fit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.masLeidos {
+  border: solid 1px #ebebeb;
+  padding: 35px 30px;
+  margin-bottom: 40px;
+}
+
+.masLeidos div h3 {
+  font-size: 20px;
+}
+
+.inner {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.thumb .inner img {
+  object-fit: cover;
+  transform: scale(1);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.post {
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+.clearfix a {
+  color: #203656;
+}
+
+.clearfix p {
+  font-size: 14px;
+}
+
+.widget ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.widget ul li{
+  position: relative;
+  padding-top: 10px;
+}
+
+.widget ul li a {
+  color:#203656
+}
+
+.widget ul li::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #ebebeb;
+  background: -webkit-linear-gradient(left,#ebebeb 0%,transparent 100%);
+  background: linear-gradient(to right,#ebebeb 0%,transparent 100%);
+}
+
+.widget-count {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.blog-sidebar {
+  max-width: 360px;
+}
+
+
+
+@media (max-width: 750px) {
+  .blog-sidebar {
+      max-width: 500px;
+      margin: auto
+  }
 }
 
 @media (prefers-color-scheme: light) {
