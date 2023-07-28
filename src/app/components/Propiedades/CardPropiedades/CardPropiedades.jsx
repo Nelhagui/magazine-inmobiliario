@@ -28,39 +28,73 @@ function CardPropiedades() {
   return (
     <div>
       {isDesktop ? (
-        <div className='d-flex px-4 pt-3 justify-content-center' style={{ lineHeight: "20px" }}>
-          <Link href="/propiedades/propiedad" className='propiedad-link'>
-            <div className='d-flex bg-white justify-content-between gap-2 border propiedad-listado rounded'>
-              <div className='image-container'>
-                <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className='responsive-image' alt="imagen" />
-              </div>
-              <div className='d-flex flex-column p-1 '>
-                <div className='d-flex gap-4 pt-1 ps-2'>
-                  <h5 className='pt-2'>$ 100.000</h5>
-                  <div className='d-flex flex-column border-start ps-3' style={{ lineHeight: "10px" }}>
-                    <h5 className='pt-2 mb-3'>Av. Libertador al 1234</h5>
-                    <p>Palermo, Capital Federal</p>
-                  </div>
-                </div>
-                <div className='d-flex gap-3 pt-4 mb-0 pb-0'>
-                  <p><FontAwesomeIcon icon={faRulerVertical} className='me-2' style={{width: "20px"}}/>182 m²</p>
-                  <p><FontAwesomeIcon icon={faBath} className='me-2' style={{width: "20px"}}/>1 baño</p>
-                  <p><FontAwesomeIcon icon={faHouse} className='me-2' style={{width: "20px"}}/>4 amb.</p>
-                  <div className='propiedades-icons gap-3'>
-                    <p><FontAwesomeIcon icon={faBed} className='me-2' style={{width: "20px"}}/>2 dorm.</p>
-                    <p><FontAwesomeIcon icon={faCar} className='me-2' style={{width: "20px"}}/>1 coch.</p>
-                  </div>
-                </div>
-                <h5 className='mt-0 pt-0'>Venta Local en Dome Business Plaza Italia</h5>
-                <p className='pe-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                <span className='propiedades-icons'>Totam praesentium rem dolorum.</span></p>
-                <div className='d-flex justify-content-end btn-container '>
-                  <button className='btn btn-red btn-contacto fw-medium px-3 py-2'>Contactar</button>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
+           <div className='d-flex px-4 pt-3 justify-content-center' style={{lineHeight:"20px"}}>
+           <Link href="/propiedades/propiedad" className='propiedad-link'>
+             <div className='d-flex bg-white justify-content-between gap-2 border propiedad-listado rounded-4'>
+               <div className='image-container'>
+                 <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className='responsive-image' alt="imagen" />
+               </div>
+               <div className='d-flex flex-column justify-content-between pe-4 ps-2 py-2 '>
+                 <div className='d-flex gap-4 pt-1 ps-2'>
+                   <h5 className='pt-2'>$ 100.000</h5>
+                   <div className='d-flex flex-column border-start ps-3' style={{lineHeight:"10px"}}>
+                     <h5 className='pt-2 mb-3'>Av. Libertador al 1234</h5>
+                     <p>Palermo, Capital Federal</p>
+                   </div> 
+                 </div>
+                 <div className='d-flex gap-3 pt-4 mb-0 pb-0'>
+                   <p><FontAwesomeIcon icon={faRulerVertical} className='me-2' style={{width: "20px"}}/>182 m²</p>
+                   <p><FontAwesomeIcon icon={faBath} className='me-2' style={{width: "20px"}}/>1 baño</p>
+                   <p><FontAwesomeIcon icon={faHouse} className='me-2' style={{width: "20px"}}/>4 amb.</p>
+                   <div className='propiedades-icons gap-3'>
+                     <p><FontAwesomeIcon icon={faBed} className='me-2' style={{width: "20px"}}/>2 dorm.</p>
+                     <p><FontAwesomeIcon icon={faCar} className='me-2' style={{width: "20px"}}/>1 coch.</p>
+                   </div>
+                 </div>
+                 <div>
+                  <h5 className='mt-0 pt-0'>Venta Local 182 m2 en Dome Business Plaza Italia</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum.</p>
+                 </div>
+                 <div className='d-flex justify-content-end btn-container'>
+                   <button className='btn btn-red fw-medium py-2'>Contactar</button>
+                 </div>
+               </div>
+             </div>
+           </Link>
+         </div>
+        // <div className='d-flex px-4 pt-3 justify-content-center' style={{ lineHeight: "20px" }}>
+        //   <Link href="/propiedades/propiedad" className='propiedad-link'>
+        //     <div className='d-flex bg-white gap-2 border propiedad-listado rounded'>
+        //       <div className='image-container'>
+        //         <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className='responsive-image' alt="imagen" />
+        //       </div>
+        //       <div className='d-flex flex-column p-1 ' style={{width: "100%"}}>
+        //         <div className='d-flex gap-4 pt-1 ps-2'>
+        //           <h5 className='pt-2'>$ 100.000</h5>
+        //           <div className='d-flex flex-column border-start ps-3' style={{ lineHeight: "10px" }}>
+        //             <h5 className='pt-2 mb-3'>Av. Libertador al 1234</h5>
+        //             <p>Palermo, Capital Federal</p>
+        //           </div>
+        //         </div>
+        //         <div className='d-flex gap-3 pt-4 mb-0 pb-0'>
+        //           <p><FontAwesomeIcon icon={faRulerVertical} className='me-2' style={{width: "20px"}}/>182 m²</p>
+        //           <p><FontAwesomeIcon icon={faBath} className='me-2' style={{width: "20px"}}/>1 baño</p>
+        //           <p><FontAwesomeIcon icon={faHouse} className='me-2' style={{width: "20px"}}/>4 amb.</p>
+        //           <div className='propiedades-icons gap-3'>
+        //             <p><FontAwesomeIcon icon={faBed} className='me-2' style={{width: "20px"}}/>2 dorm.</p>
+        //             <p><FontAwesomeIcon icon={faCar} className='me-2' style={{width: "20px"}}/>1 coch.</p>
+        //           </div>
+        //         </div>
+        //         <h5 className='mt-0 pt-0'>Venta Local en Dome Business Plaza Italia</h5>
+        //         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        //         <span className='propiedades-icons'>Totam praesentium rem dolorum.</span></p>
+        //         <div className='d-flex justify-content-end btn-container '>
+        //           <button className='btn btn-red fw-medium px-3 py-2'>Contactar</button>
+        //         </div>
+        //       </div>
+        //     </div>
+        //   </Link>
+        // </div>
       ) : (
         <div className="card mx-4 mb-4 bg-white" style={{ width: "auto" }}>
           <Link href="/propiedades/propiedad">
