@@ -20,6 +20,12 @@
     border: solid 1px #ebebeb;
     border-radius: 10px;
     padding: 30px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+}
+
+.nextprev-post:hover {
+    border: solid 1px #e63946;
 }
 
 .section-title {

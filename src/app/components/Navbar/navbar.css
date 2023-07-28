@@ -153,6 +153,11 @@ nav div ul li .nav-item {
     z-index: 2000;
 }
 
+.dropdown-item:hover{
+    color: #e63946;
+    font-weight: 500;
+}
+
 .dropdownn > .pruebaa:hover + .dropdown-menuu {
     opacity: 1
 }

@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 import "./filtrosPropiedades.css"
 
 function FiltrosPropiedades() {
-    const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingrese ciudad o barrio');
+    const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Ingrese su ciudad');
     const [tipoSeleccionado, setTipoSeleccionado] = useState('Propiedad');
   return (
-    <div className='d-flex row justify-content-center gy-2 pt-3 pb-4'>
-      <div className="dropdown d-flex justify-content-md-end justify-content-center col-md-4 col-sm-10">
+    <div className='d-flex justify-content-center gap-2 pt-3 pb-2'>
+      <div className="dropdown d-flex justify-content-md-end justify-content-center ">
         <button className="dropdown-toggle filtros-propiedades" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           {localidadSeleccionada}
         </button>
@@ -21,7 +21,7 @@ function FiltrosPropiedades() {
           }
         </ul>
       </div>
-      <div className="dropdown d-flex justify-content-md-start justify-content-center col-md-3 col-sm-10">
+      <div className="dropdown d-flex justify-content-md-start justify-content-center ">
         <button className="dropdown-toggle filtros-propiedades" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           {tipoSeleccionado}
         </button>

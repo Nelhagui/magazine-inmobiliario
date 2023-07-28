@@ -33,16 +33,16 @@ function Navbar() {
           <li className="dropdownn p-3 nav-item">
             <a className="pruebaa nav-link">Ediciones</a>
             <ul className="dropdown-menuu">
-              <li className="pt-2 pb-1">
+              <li className="py-2">
                 <a
-                  className="dropdown-item text-dark"
+                  className="dropdown-item text-dark efecto-hover"
                   href="http://magazineinmobiliario.com.ar/revista-online/2023/julio/"
                   target="_blank"
                 >
                   Edición Julio 2023
                 </a>
               </li>
-              <li className="py-1 border-top">
+              <li className="pt-2 border-top">
                 <a
                   className="dropdown-item text-dark"
                   href="http://magazineinmobiliario.com.ar/revista-online/2023/junio/"
