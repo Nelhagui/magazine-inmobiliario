@@ -1,12 +1,16 @@
-
+"use client"
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css"
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
-
+  const [visible, setVisible] = useState(false);
+    
+  const toggleDiv = () => {
+    setVisible(!visible);
+  }
   return (
     <nav id="nav-menu" className="container-fluid bg-white">
       <div className="row nav-border">
@@ -26,12 +30,12 @@ function Navbar() {
               Blog
             </Link>
           </li>
-          {/* <li className="dropdownn p-3 nav-item">
+          <li className="dropdownn p-3 nav-item">
             <a className="pruebaa nav-link">Ediciones</a>
             <div className="dropdown-menuu">
               <li className="pt-2 pb-1">
                 <a
-                  className="dropdown-item"
+                  className="dropdown-item text-dark"
                   href="http://magazineinmobiliario.com.ar/revista-online/2023/julio/"
                   target="_blank"
                 >
@@ -40,7 +44,7 @@ function Navbar() {
               </li>
               <li className="py-1 border-top">
                 <a
-                  className="dropdown-item"
+                  className="dropdown-item text-dark"
                   href="http://magazineinmobiliario.com.ar/revista-online/2023/junio/"
                   target="_blank"
                 >
@@ -48,7 +52,7 @@ function Navbar() {
                 </a>
               </li>
             </div>
-          </li> */}
+          </li>
           <li className="nav-item p-3">
             <Link className="nav-link" href="/servicios">
               Servicios
@@ -69,7 +73,7 @@ function Navbar() {
 
       <div className="mobile-toggler d-md-none text-end nav-border" style={{maxHeight: "55px"}}>
         <a className="d-md-none nav-border" data-bs-toggle="offcanvas" href="#mobile-nav" role="button" aria-controls="mobile-nav">
-            <div  className="hamburger-lines p-3">
+            <div className="hamburger-lines p-3">
               <span className="line line1"></span>
               <span className="line line2"></span>
               <span className="line line3"></span>
@@ -80,7 +84,6 @@ function Navbar() {
               <div className="bottom-bun"></div>
             </label> 
           <div  className='menu-button p-3'></div>
-          {/* <FontAwesomeIcon  icon={faBars}  style={{height: "1.8em", color: "#203656"}}/> */}
         </a>
       </div>
       <div className="offcanvas offcanvas-end canvas nav-border" tabIndex="-1" id="mobile-nav" style={{ boxShadow: "-4px 0px 20px rgba(32,54,86,.1)" }}>
@@ -100,9 +103,9 @@ function Navbar() {
               <li className="canvas-li">
                 <div className="d-flex justify-content-between me-3">
                   <Link className="nav-link" href="/">Ediciones</Link>
-                  {/* <i className="fa-solid fa-angle-down switch" onClick={toggleDiv}></i> */}
+                  <FontAwesomeIcon icon={faAngleDown} onClick={toggleDiv} className="switch"/>
                 </div>
-                {/* {
+                {
                   visible && (
                     <ul className="sub-menu d-flex flex-column gap-1">
                       <li className="menu-item pt-2 pb-1">
@@ -114,7 +117,7 @@ function Navbar() {
                     </ul>
                   )
 
-                } */}
+                }
               </li>
               <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/propiedades" >Propiedades</Link>

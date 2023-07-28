@@ -1,4 +1,5 @@
-import Image from 'next/image'
+
+
 import styles from './page.module.css'
 import { cajitas, noticias } from './data.js'
 import Newsletter from './components/Home/NewsLetter/Newsletter'
