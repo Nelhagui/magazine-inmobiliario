@@ -12,7 +12,7 @@ function Footer() {
             <a href="#"><FontAwesomeIcon icon={faInstagram} className='fs-4 fa-instagram'/></a>
         </div>
         <p className='mb-1 fw-medium'>Copyright © 2023 Magazine Inmobiliario.</p>
-        <p>Desarrollado por <a href="https://github.com/romartinez927">romartinez927</a></p>
+        <p>Desarrollado por <a href="https://github.com/romartinez927">Rosario Martínez</a></p>
     </footer>
   )
 }
