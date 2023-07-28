@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./cardPropiedades.css"
 
 function CardPropiedades() {
+    let window
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   useEffect(() => {
