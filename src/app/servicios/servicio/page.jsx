@@ -1,3 +1,4 @@
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
@@ -24,13 +25,13 @@ function Servicio() {
                       <p><FontAwesomeIcon icon={faGlobe} className='me-2' style={{width: "16px"}}/>http://www.rocchio.com.ar</p>
                       <ul className="social-icons list-inline">
                           <li className="list-inline-item pe-2">
-                              <a href="/" target="_blank"><i className="fa-brands fa-facebook" style={{color: "#646cff"}}></i></a>
+                              <a href="/" target="_blank"><FontAwesomeIcon icon={faFacebookF} className='fs-4'/></a>
                           </li>
                           <li className="list-inline-item pe-2">
-                              <a href="/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                              <a href="/" target="_blank"><FontAwesomeIcon icon={faWhatsapp} className='fs-4'/></a>
                           </li>
                           <li className="list-inline-item pe-2">
-                              <a href="/" target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
+                              <a href="/" target="_blank"><FontAwesomeIcon icon={faInstagram} className='fs-4'/></a>
                           </li>
                       </ul>
                   </div>

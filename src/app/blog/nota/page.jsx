@@ -7,7 +7,8 @@ import SidebarNews from '../../components/Blog/SidebarNews/SidebarNews'
 import "./nota.css"
 import FormComentarios from '../../components/Blog/FormComentarios/FormComentarios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircle, faComment } from '@fortawesome/free-solid-svg-icons'
+import { faCircle, faComment, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faLinkedinIn, faPinterest, faTelegramPlane, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function Nota() {
   return (
@@ -43,22 +44,22 @@ function Nota() {
                         <p className="mb-1">Share this:</p>
                         <ul className="social-icons list-inline">
                             <li className="list-inline-item pe-2">
-                                <a href="/" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                <a href="/" target="_blank"><FontAwesomeIcon icon={faFacebookF}/></a>
                             </li>
                             <li className="list-inline-item pe-2">
-                                <a href="/" target="_blank"><i className="fab fa-twitter"></i></a>
+                                <a href="/" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
                             </li>
                             <li className="list-inline-item pe-2">
-                                <a href="/" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                                <a href="/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn}/></a>
                             </li>
                             <li className="list-inline-item pe-2">
-                                <a href="/" target="_blank"><i className="fab fa-pinterest"></i></a>
+                                <a href="/" target="_blank"><FontAwesomeIcon icon={faPinterest}/></a>
                             </li>
                             <li className="list-inline-item pe-2">
-                                <a href="/" target="_blank"><i className="fab fa-telegram-plane"></i></a>
+                                <a href="/" target="_blank"><FontAwesomeIcon icon={faTelegramPlane}/></a>
                             </li>
                             <li className="list-inline-item pe-2">
-                                <a href="/" target="_blank"><i className="far fa-envelope"></i></a>
+                                <a href="/" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
                             </li>
                         </ul>
                     </div>

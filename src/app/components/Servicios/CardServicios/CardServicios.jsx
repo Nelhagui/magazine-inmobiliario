@@ -3,6 +3,7 @@ import "./cardServicios.css"
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function CardServicios(props) {
   return (
@@ -26,7 +27,7 @@ function CardServicios(props) {
               <FontAwesomeIcon icon={faShareNodes} className='efecto-hover' style={{width: "20px"}}/>
             </div>
             <div className='d-flex efecto-hover'>
-              <a href="/"><i className="fa-brands fa-whatsapp servicios fs-4"></i></a>    
+              <a href="/"><FontAwesomeIcon icon={faWhatsapp} className='servicios fs-4'/></a>    
             </div>
           </div>
         </div>
