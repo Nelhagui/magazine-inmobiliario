@@ -1,0 +1,50 @@
+.propiedad-listado:hover {
+    transform: scale(1.001);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all ease .2s;
+}
+
+.propiedades-icons {
+    display: flex
+}
+
+.propiedad-listado {
+    height: 280px
+}
+
+.propiedad-link {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Usar el color del texto padre */
+}
+
+.propiedad-link:hover {
+    text-decoration: none; /* Subrayar al hacer hover */
+    color: inherit; /* Cambiar color al hacer hover (por ejemplo, rojo) */
+}
+  
+.propiedad-link:active {
+    color: inherit; /* Cambiar color cuando el enlace está activo (por ejemplo, verde) */
+}
+
+.propiedades-icons-sm {
+    display: flex
+}
+
+@media screen and (max-width: 1180px) {
+    .propiedad-listado {
+        height: 300px
+    }
+    .propiedad-listado p {
+        font-size: 15px;
+    }
+
+    .propiedades-icons {
+        display: none
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .propiedades-icons-sm {
+        display: none
+    }
+}

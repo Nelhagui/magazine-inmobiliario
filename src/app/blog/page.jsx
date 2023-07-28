@@ -2,7 +2,7 @@ import React from 'react'
 import SidebarCategorias from '../components/Blog/SidebarCategorias/SidebarCategorias'
 import SidebarNews from '../components/Blog/SidebarNews/SidebarNews'
 import Noticia from '../components/Blog/Noticia/Noticia'
-import { noticiasBlog } from '../daja'
+import { noticiasBlog } from '../data'
 import Pagination from '../components/Pagination/Pagination'
 import "./blog.css"
 

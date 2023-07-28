@@ -253,7 +253,75 @@ button {
   max-width: 360px;
 }
 
+.noticia-link {
+  text-decoration: none; /* Quitar subrayado */
+  color: inherit; /* Usar el color del texto padre */
+}
 
+.noticia-link:hover {
+  text-decoration: none; /* Subrayar al hacer hover */
+  color: inherit; /* Cambiar color al hacer hover (por ejemplo, rojo) */
+}
+
+.noticia-link:active {
+  color: inherit; /* Cambiar color cuando el enlace está activo (por ejemplo, verde) */
+}
+
+.noticia-autor {
+  font-size: 14px;
+}
+
+.noticia-texto {
+  font-size: 16px;
+}
+
+.noticia-titulo {
+  color: #203656;
+}
+
+.card-body {
+  padding: 30px 30px 20px 30px;
+  color: #8f9bad;
+}
+
+.category-badge {
+  color: #fff;
+  font-size: 13px;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 6px 11px;
+  line-height: 1;
+  left: 20px;
+  top: 20px;
+  position: relative;
+  z-index: 2;
+  background: #e63946;
+  background: linear-gradient(to right,#e63946 0%,#ffa387 51%,#e63946 100%);
+  background-size: 200% auto;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.category-badge:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+
+.img-container div{
+  overflow: hidden; 
+  margin-top: -1.6em;/* Ocultar el contenido que se salga de la caja */
+}
+
+.img-container div img {
+  object-fit: cover;
+}
+
+.img-container:hover div img{
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
 
 @media (max-width: 750px) {
   .blog-sidebar {

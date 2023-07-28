@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { cajitas, noticias } from './daja.js'
+import { cajitas, noticias } from './data.js'
 import Newsletter from './components/Home/NewsLetter/Newsletter'
 import SobreNosotros from './components/Home/SobreNosotros/SobreNosotros'
 import NoticiaHome from './components/Home/NoticiaHome/NoticiaHome'

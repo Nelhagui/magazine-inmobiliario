@@ -1,0 +1,11 @@
+.card-body-servicios {
+    padding: 30px 30px 10px 30px;
+    color: #8f9bad;
+}
+.fa-whatsapp.servicios {
+    color: #8f9bad;
+}
+
+.fa-whatsapp.servicios:hover {
+    color: #25D366
+}

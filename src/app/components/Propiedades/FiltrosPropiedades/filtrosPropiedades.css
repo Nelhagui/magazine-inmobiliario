@@ -1,0 +1,12 @@
+.filtros-propiedades{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+
+  .filtros-propiedades:hover {
+    color: #e63946;
+    background-color: #fff;
+    border: 1px solid #e63946;
+    transition: all .2s ease-in-out;
+  }
