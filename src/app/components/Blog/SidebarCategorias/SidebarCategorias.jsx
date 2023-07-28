@@ -1,3 +1,5 @@
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 function SidebarCategorias() {
@@ -11,27 +13,27 @@ function SidebarCategorias() {
             <ul>
                 <li className='cat-item'>
                     
-                    <a href="/blog" className='efecto-hover'><i className="fa-solid fa-angle-right pe-3"></i>Casas</a>
+                    <a href="/blog" className='efecto-hover'><FontAwesomeIcon style={{width: "25px"}} icon={faAngleRight} className='pe-3'/>Casas</a>
                     <span className="widget-count">(2)</span>
                 </li>
                 <li className='cat-item'>
-                    <a href="/blog" className='efecto-hover'><i className="fa-solid fa-angle-right pe-3"></i>Decoración</a>
+                    <a href="/blog" className='efecto-hover'><FontAwesomeIcon style={{width: "25px"}} icon={faAngleRight} className='pe-3'/>Decoración</a>
                     <span className="widget-count">(2)</span>
                 </li>
                 <li className='cat-item'>
-                    <a href="/blog" className='efecto-hover'><i className="fa-solid fa-angle-right pe-3"></i>Estilo de Vida</a>
+                    <a href="/blog" className='efecto-hover'><FontAwesomeIcon style={{width: "25px"}} icon={faAngleRight} className='pe-3'/>Estilo de Vida</a>
                     <span className="widget-count">(2)</span>
                 </li>
                 <li className='cat-item'>
-                    <a href="/blog" className='efecto-hover'><i className="fa-solid fa-angle-right pe-3"></i>Higiene</a>
+                    <a href="/blog" className='efecto-hover'><FontAwesomeIcon style={{width: "25px"}} icon={faAngleRight} className='pe-3'/>Higiene</a>
                     <span className="widget-count">(2)</span>
                 </li>
                 <li className='cat-item'>
-                    <a href="/blog" className='efecto-hover'><i className="fa-solid fa-angle-right pe-3"></i>Inmobiliarias</a>
+                    <a href="/blog" className='efecto-hover'><FontAwesomeIcon style={{width: "25px"}} icon={faAngleRight} className='pe-3'/>Inmobiliarias</a>
                     <span className="widget-count">(2)</span>
                 </li>
                 <li className='cat-item'>
-                    <a href="/blog" className='efecto-hover'><i className="fa-solid fa-angle-right pe-3"></i>Sin categoría</a>
+                    <a href="/blog" className='efecto-hover'><FontAwesomeIcon style={{width: "25px"}} icon={faAngleRight} className='pe-3'/>Sin categoría</a>
                     <span className="widget-count">(2)</span>
                 </li>
             </ul>

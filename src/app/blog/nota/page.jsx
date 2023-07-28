@@ -6,6 +6,8 @@ import SidebarCategorias from '../../components/Blog/SidebarCategorias/SidebarCa
 import SidebarNews from '../../components/Blog/SidebarNews/SidebarNews'
 import "./nota.css"
 import FormComentarios from '../../components/Blog/FormComentarios/FormComentarios'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircle, faComment } from '@fortawesome/free-solid-svg-icons'
 
 function Nota() {
   return (
@@ -17,12 +19,12 @@ function Nota() {
                 <h1 className="fw-bold mb-2 title">Easy Ways To Learn Everything About Construction</h1>
                 <div className="d-flex gap-2 py-1">
                     <p className="fs-6">Katen Doe</p>
-                    <i className="fa-solid fa-circle" style={{ fontSize: "4px", marginTop: "11px" }}></i>
+                    <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
                     <p className="fs-6">Culture</p>
-                    <i className="fa-solid fa-circle" style={{ fontSize: "4px", marginTop: "11px" }}></i>
+                    <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
                     <p className="fs-6">August 23, 2022</p>
-                    <i className="fa-solid fa-circle" style={{ fontSize: "4px", marginTop: "11px" }}></i>
-                    <p className="fs-6"><i className="fa-regular fa-comment me-1"></i>(0)</p>
+                    <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
+                    <p className="fs-6 ms-1"><FontAwesomeIcon icon={faComment} />(0)</p>
                 </div>
                 <div style={{ width: "auto" }} className='pb-2'>
                     <img src="https://images.unsplash.com/photo-1687027053771-76a0460d1c68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80" className="rounded rounded-3" style={{ width: "100%" }} alt="" />

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import "./cardPropiedades.css"
 import Link from 'next/link';
+import { faBath, faBed, faCar, faHouse, faRulerVertical } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function CardPropiedades() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -41,12 +43,12 @@ function CardPropiedades() {
                   </div>
                 </div>
                 <div className='d-flex gap-3 pt-4 mb-0 pb-0'>
-                  <p><i className="fa-solid me-2 fa-ruler-vertical"></i>182 m²</p>
-                  <p><i className="fa-solid me-2 fa-bath"></i>1 baño</p>
-                  <p><i className="fa-solid me-2 fa-house"></i>4 amb.</p>
-                  <p><i className="fa-solid me-2 fa-bed"></i>2 dorm.</p>
+                  <p><FontAwesomeIcon icon={faRulerVertical} className='me-2' style={{width: "20px"}}/>182 m²</p>
+                  <p><FontAwesomeIcon icon={faBath} className='me-2' style={{width: "20px"}}/>1 baño</p>
+                  <p><FontAwesomeIcon icon={faHouse} className='me-2' style={{width: "20px"}}/>4 amb.</p>
+                  <p><FontAwesomeIcon icon={faBed} className='me-2' style={{width: "20px"}}/>2 dorm.</p>
                   <div className='propiedades-icons gap-3'>
-                    <p><i className="fa-solid me-2 fa-car none"></i>1 coch.</p>
+                    <p><FontAwesomeIcon icon={faCar} className='me-2' style={{width: "20px"}}/>1 coch.</p>
                   </div>
                 </div>
                 <h5 className='mt-0 pt-0'>Venta Local 182 m2 en Dome Business Plaza Italia</h5>
@@ -71,11 +73,11 @@ function CardPropiedades() {
                 </div>
               </div>
               <div className='d-flex gap-2 pt-3 '>
-                <p><i className="fa-solid me-1 fa-ruler-vertical"></i>182 m²</p>
-                <p><i className="fa-solid me-1 fa-bath"></i>1 baño</p>
-                <p><i className="fa-solid me-1 fa-house"></i>4 amb.</p>
+                <p><FontAwesomeIcon icon={faRulerVertical} className='me-2' style={{width: "20px"}}/>182 m²</p>
+                <p><FontAwesomeIcon icon={faBath} className='me-2' style={{width: "20px"}}/>1 baño</p>
+                <p><FontAwesomeIcon icon={faHouse} className='me-2' style={{width: "20px"}}/>4 amb.</p>
                 <div className='propiedades-icons-sm'>
-                  <p><i className="fa-solid me-1 fa-bed"></i>2 dorm.</p>
+                  <p><FontAwesomeIcon icon={faBed} className='me-2' style={{width: "20px"}}/>2 dorm.</p>
                 </div>
               </div>
               <h5 className='mt-1 mb-2'>Venta Local 192 m2 en Dome Business Plaza Belgrano Cochera Opcional</h5>

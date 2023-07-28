@@ -2,12 +2,14 @@
 import Link from "next/link";
 import React from "react";
 import "./navbar.css"
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
 
   return (
     <nav id="nav-menu" className="container-fluid bg-white">
-      <div className="row nav-height">
+      <div className="row nav-border">
         <div className="d-none col-3 d-md-flex justify-content-center ">
           <a href="/" className="fw-700 my-auto logo">
             <img src="./logo.png" alt="Magazine Inmobiliario" width="140" />
@@ -65,12 +67,12 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="mobile-toggler d-md-none text-end" >
-        <a className="d-md-none" data-bs-toggle="offcanvas" href="#mobile-nav" role="button" aria-controls="mobile-nav">
-          <i id="mobile-toggler-icon" className="fa-solid fa-bars fs-2 p-3 text-black" ></i>
+      <div className="mobile-toggler d-md-none text-end nav-border" >
+        <a className="d-md-none nav-border" data-bs-toggle="offcanvas" href="#mobile-nav" role="button" aria-controls="mobile-nav">
+          <FontAwesomeIcon id="mobile-toggler-icon" icon={faBars} className='p-3' style={{height: "1.8em", color: "#203656"}}/>
         </a>
       </div>
-      <div className="offcanvas offcanvas-end canvas" tabIndex="-1" id="mobile-nav" style={{ boxShadow: "-4px 0px 20px rgba(32,54,86,.1)" }}>
+      <div className="offcanvas offcanvas-end canvas nav-border" tabIndex="-1" id="mobile-nav" style={{ boxShadow: "-4px 0px 20px rgba(32,54,86,.1)" }}>
         <div className="offcanvas-header">
           <img src="/logo.png" width="180" alt="logo" />
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -78,11 +80,11 @@ function Navbar() {
         <div className="offcanvas-body container pt-5">
           <div className="row">
             <ul className="d-flex flex-column canvas-menu">
-              <li className="canvas-li">
-                <Link className="nav-link" href="/">Home</Link>
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
+                <Link className="nav-link" href="/" >Home</Link>
               </li>
-              <li className="canvas-li">
-                <Link className="nav-link" href="/blog">Blog</Link>
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
+                <Link className="nav-link" href="/blog" >Blog</Link>
               </li>
               <li className="canvas-li">
                 <div className="d-flex justify-content-between me-3">
@@ -103,13 +105,13 @@ function Navbar() {
 
                 } */}
               </li>
-              <li className="canvas-li">
-                <Link className="nav-link" href="/propiedades">Propiedades</Link>
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
+                <Link className="nav-link" href="/propiedades" >Propiedades</Link>
               </li>
-              <li className="canvas-li">
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/servicios">Servicios</Link>
               </li>
-              <li className="canvas-li">
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/contacto">Contacto</Link>
               </li>
             </ul>

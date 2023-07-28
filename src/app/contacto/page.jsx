@@ -3,6 +3,8 @@
 import React from 'react'
 import "./contacto.css"
 import ContactForm from '../components/Contacto/ContactForm/ContactForm'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Contacto() {
 
@@ -15,10 +17,10 @@ function Contacto() {
           <p className='mt-2'>Si tienes alguna pregunta, comentario o sugerencia, por favor no dudes en ponerte en contacto con nosotros a través del formulario que se encuentra a continuación. </p>
           <p>Estaremos encantados de ayudarte en lo que necesites.</p>
           <div className='d-flex gap-2 contacto-icons'>
-            <p><i className="fa-solid fa-phone pe-2"></i>15-6577-6756</p>
+            <p><FontAwesomeIcon icon={faPhone} className='pe-2'/>15-6577-6756</p>
           </div>
           <div className='d-flex gap-2 contacto-icons'>
-            <p><i className="fa-solid fa-envelope pe-2"></i>contacto@magazineinmobiliario.com.ar</p>   
+            <p><FontAwesomeIcon icon={faEnvelope} className='pe-2'/>contacto@magazineinmobiliario.com.ar</p>   
           </div>
         </div>
         <ContactForm/>

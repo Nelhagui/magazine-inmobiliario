@@ -1,12 +1,14 @@
 import React from 'react'
 import "./cardServicios.css"
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 function CardServicios(props) {
   return (
     <div className="card rounded-3 col-sm-6 px-0" style={{maxWidth: "350px", height: "max-content", minWidth: "340px"}}>
         <div className="img-container">
-          <a href="/" className="category-badge">{props.tag}</a>
+          <a href="/" className="category-badge" style={{opacity: 0}}>{props.tag}</a>
           <div className='border-top rounded-top'>
             <Link href="/servicios/servicio">
               <img src={props.img} className="card-img-top rounded-top" height="230" width="550" alt={props.title}/>
@@ -21,7 +23,7 @@ function CardServicios(props) {
           <p className="card-text noticia-texto pb-1 fw-medium" style={{fontSize: "1rem"}}>Desde 1970, trabajando con Seriedad, respeto y confianza.</p>
           <div className='border-top d-flex justify-content-between pt-3 px-1'>
             <div className='d-flex efecto-hover'>
-              <i className="fa-solid fa-share-nodes fs-4 efecto-hover"></i>
+              <FontAwesomeIcon icon={faShareNodes} className='efecto-hover' style={{width: "20px"}}/>
             </div>
             <div className='d-flex efecto-hover'>
               <a href="/"><i className="fa-brands fa-whatsapp servicios fs-4"></i></a>    
