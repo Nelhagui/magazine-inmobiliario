@@ -13,7 +13,7 @@ export default function Home() {
         <div className={`${styles.bgRgba} d-flex flex-column justify-content-center align-items-center text-light text-center`} >
           <h1 className={`${styles.titleHeader} pb-2`}>Todo lo que necesitas para tu hogar</h1>
           <div className="container-fluid " >
-            <form action="" className={`${styles.header.form} row rounded pb-2 pe-2 mb-3 mx-auto d-flex justify-content-center gy-2`} style={{backgroundColor: "rgba(234, 234, 234, 0.6)",}}>
+            <form action="" className={`${styles.header.form} row rounded pb-3 pt-2 pe-2 mb-3 mx-auto d-flex justify-content-center gy-2`} style={{backgroundColor: "rgba(234, 234, 234, 0.6)",}}>
               <div className="form-group col-md-6">
                 <input
                   type="text"

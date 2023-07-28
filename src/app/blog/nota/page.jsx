@@ -26,8 +26,7 @@ function Nota() {
                     <p className="fs-6">Culture</p>
                     <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
                     <p className="fs-6">August 23, 2022</p>
-                    <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
-                    <p className="fs-6 ms-1"><FontAwesomeIcon icon={faComment} />(0)</p>
+                    
                 </div>
                 <div style={{ width: "auto" }} className='pb-2'>
                     <img src="https://images.unsplash.com/photo-1687027053771-76a0460d1c68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80" className="rounded rounded-3" style={{ width: "100%" }} alt="" />
@@ -79,21 +78,7 @@ function Nota() {
                         <h5 className='mt-1 efecto-hover'>Your Light Is About To Stop Being Relevant</h5>
                     </div>
                 </div>
-                <div className='my-4'>
-                    <div>
-                        <h3 className='section-title'>Deja un comentario</h3>
-                        <svg width="33" height="6" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stopColor="#e63946"></stop>
-                                    <stop offset="100%" stopColor="#FFA387"></stop>
-                                </linearGradient>
-                            </defs>
-                            <path d="M33 1c-3.3 0-3.3 4-6.598 4C23.1 5 23.1 1 19.8 1c-3.3 0-3.3 4-6.599 4-3.3 0-3.3-4-6.6-4S3.303 5 0 5" stroke="url(#gradient)" strokeWidth="2" fill="none"></path>
-                        </svg>
-                    </div>
-                    <FormComentarios />
-                </div>
+              
             </div>
             <div className="col-md-4 col-lg-4 pt-5 nota-sidebar">
                 <SidebarNews title="Últimas Noticias" />

@@ -9,7 +9,7 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 function Contacto() {
 
   return (
-    <div className="container-fluid container-xl py-3 contacto">
+    <div className="container-fluid container-xl py-3 contacto" style={{minHeight: "80%"}}>
       <div className='d-flex row gap-5 justify-content-evenly align-items-center'>
         <div className='col-md-5 col-12'>
           <h3 className='mb-0'>Contacto</h3>

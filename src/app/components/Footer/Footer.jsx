@@ -9,7 +9,7 @@ function Footer() {
         <div className="social d-flex gap-3 py-2">
             <a href="#"><FontAwesomeIcon icon={faFacebook} className='fs-4'/></a>    
             <a href="#"><FontAwesomeIcon icon={faWhatsapp} className='fs-4 fa-whatsapp '/></a>
-            <a href="#"><FontAwesomeIcon icon={faInstagram} className='fs-4 fa-instagram'/></a>
+            <a href="#" className='faInstagram'><FontAwesomeIcon icon={faInstagram} className='fs-4 faInstagram'/></a>
         </div>
         <p className='mb-1 fw-medium'>Copyright © 2023 Magazine Inmobiliario.</p>
         <p>Desarrollado por <a href="https://github.com/romartinez927">Rosario Martínez</a></p>
