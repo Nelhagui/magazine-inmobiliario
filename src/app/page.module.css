@@ -1,229 +1,235 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.accordion-1 .area-1 {
+	height: 440px;
+	background: url('https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80') center center no-repeat;
+	background-size: cover;
+	transition: all ease .5s;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.accordion-1 .area-1:hover {
+	opacity: .8;
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+.accordion-1 .area-2 {
+	padding-top: 1rem;
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+.accordion-1 .accordion {
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.accordion-1 h2 {
+	margin-bottom: 1rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+.accordion-1 p {
+	font-size: 1.1em;
 }
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+.blog-link {
+	text-decoration: none;
+	/* Quitar subrayado */
+	color: inherit;
+	/* Usar el color del texto padre */
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
+.blog-link:hover {
+	text-decoration: none;
+	/* Subrayar al hacer hover */
+	color: inherit;
+	/* Cambiar color al hacer hover (por ejemplo, rojo) */
 }
 
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+.blog-link:active {
+	color: inherit;
+	/* Cambiar color cuando el enlace está activo (por ejemplo, verde) */
 }
 
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+.card-noticia:hover {
+	transform: scale(1.001);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: all ease .5s;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
+
+/* HEADER */
+
+.header {
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 42vh;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+.header form {
+	max-width: 60%;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+.bgRgba {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
 }
 
-.center::before,
-.center::after {
-  content: '';
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+.btnRed {
+	background-color: #e63946;
+	color: #fff;
+	transition: all ease .4s;
 }
 
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.btnRed:hover {
+	background-color: #e63946;
+	opacity: .9;
+	color: #fff
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+
+.tags a {
+    border: solid 1px #ebebeb;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px 14px;
+    margin: 4px 0;
+    margin-right: 5px;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
+.tagsHome {
+    color: #203656;
+	text-decoration: none;
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+.tags a:hover {
+    color: #e63946;
+    outline: 0;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border: solid 1px #e63946;
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
+.titleHeader {
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+	font-weight: 700;
+	font-size: 38px;
+	color: #fff;
+	text-align: center;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+@media (max-width: 900px) {
+	.title-header {
+		font-size: 2.4rem;
+	}
+
+	.header {
+		height: 60vh;
+	}
+
+	.header form {
+		max-width: 90%;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+	.accordion-1 .accordion {
+		max-width: 70%;
+	}
+}
+
+@media (min-width: 992px) {
+	.cards-2 .card {
+		display: inline-block;
+		width: 292px;
+		max-width: 100%;
+		vertical-align: top;
+	}
+
+	.cards-2 .card:nth-of-type(3n+2) {
+		margin-right: 1.5rem;
+		margin-left: 1.5rem;
+	}
+
+	.accordion-1 {
+		height: 640px;
+	}
+
+	.accordion-1 .area-1 {
+		width: 40%;
+		height: 100%;
+		display: inline-block;
+	}
+
+	.accordion-1 .area-2 {
+		width: 60%;
+		height: 100%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.accordion-1 .accordion {
+		max-width: 88%;
+		margin-left: 2rem;
+		padding-bottom: 0;
+	}
+
+	.accordion-1 .accordion-title {
+		width: 85%;
+	}
+}
+
+
+.btn-grad {
+	background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+	transition: 0.5s;
+	color: #fff;
+	padding: 9.5px 36px;
+	background-size: 200% auto;
+	border-radius: 25px;
+}
+
+.btn-grad:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-home {
+	color: #fff;
+	padding: 9.5px 36px;
+	background: #e63946;
+	background: -webkit-linear-gradient(left, #e63946 0%, #ffa387 51%, #e63946 100%);
+	background: linear-gradient(to right, #e63946 0%, #ffa387 51%, #e63946 100%);
+	background-size: 200% auto;
+	border-radius: 25px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.btn-home:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.tags.home a {
+	color: #203656;
+}
+
+@media (min-width: 1200px) {
+	.cards-2 .card {
+		width: 300px;
+	}
+
+	.cards-2 .card:nth-of-type(3n+2) {
+		margin-right: 1.625rem;
+		margin-left: 1.625rem;
+	}
+
 }
