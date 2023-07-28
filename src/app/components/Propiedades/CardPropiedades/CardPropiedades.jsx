@@ -54,7 +54,7 @@ function CardPropiedades() {
                 <h5 className='mt-0 pt-0'>Venta Local 182 m2 en Dome Business Plaza Italia</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum.</p>
                 <div className='d-flex justify-content-end btn-container'>
-                  <button className='btn btn-home fw-medium px-3 py-2'>Contactar</button>
+                  <button className='btn btn-red fw-medium px-3 py-2'>Contactar</button>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ function CardPropiedades() {
               <h5 className='mt-1 mb-2'>Venta Local 192 m2 en Dome Business Plaza Belgrano Cochera Opcional</h5>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum.</p>
               <div className='d-flex justify-content-end btn-container'>
-                <button className='btn btn-home fw-medium px-3 py-2'>Contactar</button>
+                <button className='btn btn-red fw-medium px-3 py-2'>Contactar</button>
               </div>
             </div>
           </Link>

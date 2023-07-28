@@ -29,31 +29,6 @@
     color: #8f9bad;
 }
 
-.category-badge {
-    color: #fff;
-    font-size: 13px;
-    border-radius: 25px;
-    display: inline-block;
-    padding: 6px 11px;
-    line-height: 1;
-    left: 20px;
-    top: 20px;
-    position: relative;
-    z-index: 2;
-    background: #e63946;
-    background: linear-gradient(to right,#e63946 0%,#ffa387 51%,#e63946 100%);
-    background-size: 200% auto;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.category-badge:hover {
-    background-position: right center; 
-    color: #fff;
-    text-decoration: none;
-}
-
 .img-container div{
     overflow: hidden; 
     margin-top: -1.6em;/* Ocultar el contenido que se salga de la caja */

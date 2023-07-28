@@ -12,7 +12,7 @@ function Navbar() {
       <div className="row nav-border">
         <div className="d-none col-3 d-md-flex justify-content-center ">
           <a href="/" className="fw-700 my-auto logo">
-            <img src="./logo.png" alt="Magazine Inmobiliario" width="140" />
+            <img src="./logo.png" alt="Magazine Inmobiliario" width="140" placeholder="blur" blurdataurl={'./logo.png'} />
           </a>
         </div>
         <ul className="d-none col-9 d-md-flex justify-content-end my-auto">
@@ -67,7 +67,7 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="mobile-toggler d-md-none text-end nav-border" >
+      <div className="mobile-toggler d-md-none text-end nav-border" style={{maxHeight: "55px"}}>
         <a className="d-md-none nav-border" data-bs-toggle="offcanvas" href="#mobile-nav" role="button" aria-controls="mobile-nav">
             <div  className="hamburger-lines p-3">
               <span className="line line1"></span>
@@ -85,7 +85,7 @@ function Navbar() {
       </div>
       <div className="offcanvas offcanvas-end canvas nav-border" tabIndex="-1" id="mobile-nav" style={{ boxShadow: "-4px 0px 20px rgba(32,54,86,.1)" }}>
         <div className="offcanvas-header">
-          <img src="/logo.png" width="180" alt="logo" />
+          <img src="./logo.png" width="180" alt="logo" placeholder="blur" blurdataurl={'./logo.png'} />
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className="offcanvas-body container pt-5">

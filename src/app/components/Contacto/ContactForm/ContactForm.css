@@ -1,0 +1,61 @@
+.form-comentarios p {
+    color: #8f9bad;
+    font-size: 15px;
+}
+
+.btn-form-comentarios {
+    color: #fff;
+    padding: 9.5px 36px;
+    background: #e63946;
+    background: -webkit-linear-gradient(left,#e63946 0%,#ffa387 51%,#e63946 100%);
+    background: linear-gradient(to right,#e63946 0%,#ffa387 51%,#e63946 100%);
+    background-size: 200% auto;
+    border-radius: 25px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-form-comentarios:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
+.comment-form-comment textarea {
+    height: 120px;
+    display: block;
+    border-radius: 25px;
+    width: 100%;
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #8f9bad;
+    background-color: #fff;
+    background-image: none;
+    border: solid 1px #ebebeb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.comment-form-author label, .comment-form-email label, .comment-form-comment label, .comment-form-asunto label {
+    color: #8f9bad;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0 0 6px 8px
+}
+
+.comment-form-author input, .comment-form-email input, .comment-form-asunto input {
+    display: block;
+    border-radius: 25px;
+    width: 100%;
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #8f9bad;
+    background-color: #fff;
+    background-image: none;
+    border: solid 1px #ebebeb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

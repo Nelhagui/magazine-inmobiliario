@@ -66,7 +66,7 @@ function FormPropiedad() {
                     style={{minHeight:"70px"}}
                     ></textarea>
             </p>
-            <button type="submit" className='btn-home col-12' data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+            <button type="submit" className='btn-red col-12' data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
         </form>          
     </div>
   )

@@ -104,26 +104,6 @@
 	}
 }
 
-.btn-home {
-	color: #fff;
-	padding: 9.5px 36px;
-	background: #e63946;
-	background: -webkit-linear-gradient(left, #e63946 0%, #ffa387 51%, #e63946 100%);
-	background: linear-gradient(to right, #e63946 0%, #ffa387 51%, #e63946 100%);
-	background-size: 200% auto;
-	border-radius: 25px;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.btn-home:hover {
-	background-position: right center;
-	/* change the direction of the change here */
-	color: #fff;
-	text-decoration: none;
-}
-
 
 @media (min-width: 1200px) {
 	.cards-2 .card {

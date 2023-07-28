@@ -28,27 +28,6 @@ a {
   text-decoration: none
 }
 
-.btn-home {
-	color: #fff;
-	padding: 9.5px 36px;
-	background: #e63946;
-	background: -webkit-linear-gradient(left, #e63946 0%, #ffa387 51%, #e63946 100%);
-	background: linear-gradient(to right, #e63946 0%, #ffa387 51%, #e63946 100%);
-	background-size: 200% auto;
-	border-radius: 25px;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-
-
-.btn-home:hover {
-	background-position: right center;
-	/* change the direction of the change here */
-	color: #fff;
-	text-decoration: none;
-}
 
 body {
   margin: 0;
@@ -118,6 +97,19 @@ button {
 
 .rounded {
   border-radius: 10px !important;
+}
+
+.btn-red {
+  background-color: #e63946;
+  color: #fff;
+  transition: all ease .4s;
+  border-radius: 25px;
+}
+
+.btn-red:hover {
+  background-color: #e63946;
+  opacity: .9;
+  color: #fff
 }
 
 .efecto-hover:hover {
@@ -308,8 +300,7 @@ button {
   top: 20px;
   position: relative;
   z-index: 2;
-  background: #e63946;
-  background: linear-gradient(to right,#e63946 0%,#ffa387 51%,#e63946 100%);
+  background-color: #e63946;
   background-size: 200% auto;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;

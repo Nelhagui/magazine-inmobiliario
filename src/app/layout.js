@@ -5,11 +5,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Script from 'next/script'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee, faCircle, faAngleRight, faBars, faRulerVertical, faBath, faHouse, faBed, faCar, faShareNodes, faLocationDot, faPhone, faGlobe, faEnvelope,  } from '@fortawesome/free-solid-svg-icons';
-import { faComment } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faComment, faCoffee, faCircle, faAngleRight, faBars, faRulerVertical, faBath, faHouse, faBed, faCar, faShareNodes, faLocationDot, faPhone, faGlobe, faEnvelope,  );
+
+
 const poppins = Poppins({ 
   weight: ['300', '400', '500', '700'],
   subsets: ['latin'], })

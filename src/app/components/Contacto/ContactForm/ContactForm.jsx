@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import "./ContactForm.css"
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -91,7 +92,7 @@ function ContactForm() {
                     style={{minHeight:"150px"}}
                     ></textarea>
             </p>
-            <button type="submit" className='btn-form-comentarios'>Enviar</button>
+            <button type="submit" className='btn-red'>Enviar</button>
         </form>
     )
 }

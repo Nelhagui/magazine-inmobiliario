@@ -9,7 +9,7 @@ function PropiedadSimilar() {
             <h5 className='mt-1 mb-2'>Venta Local en Dome Business Plaza Belgrano</h5>
             <p>Belgrano, Capital Federal</p>
             <div className='d-flex justify-content-end btn-container'>
-                <button className='btn btn-home fw-medium px-3 py-2'>Contactar</button>
+                <button className='btn btn-red fw-medium px-3 py-2'>Contactar</button>
             </div>
         </div>
     </div>
