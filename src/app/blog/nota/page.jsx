@@ -18,8 +18,10 @@ function Nota() {
                 <p className='fs-6 mb-2'>Magazine Inmobiliario / Culture / Feel Like A Pro With The Help Of These 7 Tips</p>
                 <h1 className="fw-bold mb-2 title">Easy Ways To Learn Everything About Construction</h1>
                 <div className="d-flex gap-2 py-1">
-                    <p className="fs-6">Katen Doe</p>
-                    <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
+                    <div className='d-none gap-2 d-md-flex d-xl-flex'>
+                        <p className="fs-6">Katen Doe</p>
+                        <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
+                    </div>
                     <p className="fs-6">Culture</p>
                     <FontAwesomeIcon icon={faCircle} style={{ fontSize: "4px", marginTop: "11px" }}/>
                     <p className="fs-6">August 23, 2022</p>

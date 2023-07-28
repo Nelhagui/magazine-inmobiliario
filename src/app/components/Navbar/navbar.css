@@ -7,6 +7,28 @@ nav div ul li .nav-item {
     transition: all ease 0.3s;
 }
 
+
+
+.hamburger {
+    position: absolute;
+    top: .5em;
+    right: 5%;
+    width: 2em;
+    height: 35px;
+    z-index: 5;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 2.3em;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #203656;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
 .nav-border {
     box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
 }

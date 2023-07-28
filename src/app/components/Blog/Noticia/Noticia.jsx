@@ -18,7 +18,7 @@ function Noticia(props) {
             <div className="card-body d-flex flex-column gap-1">
                 <div className='d-flex justify-content-start gap-3'>
                     <p className='my-1 noticia-autor fw-normal'>Katen Doe</p>
-                    <FontAwesomeIcon icon={faCircle} style={{ width: "4px" }}/>
+                    <FontAwesomeIcon icon={faCircle} className="my-1" style={{ width: "4px" }}/>
                     <p className='my-1 noticia-autor fw-normal'>{props.date}</p>
                 </div>
                 <Link href="/blog/nota" className='noticia-link'>
@@ -28,7 +28,7 @@ function Noticia(props) {
                 <div className='border-top d-flex justify-content-between pt-3'>
                 <FontAwesomeIcon icon={faShareNodes} className='efecto-hover' style={{width: "20px"}}/>
                     <a href="/blog/nota" className='noticia-link'>
-                        <svg className="efecto-hover" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16"> <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" /> </svg>
+                        <svg className="efecto-hover" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-three-dots" viewBox="0 0 16 16"> <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" /> </svg>
                     </a>
                 </div>
             </div>

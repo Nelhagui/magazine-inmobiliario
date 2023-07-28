@@ -7,7 +7,7 @@ function Servicio() {
     <div className='container-xl mt-5'>
       <div>
           <p className='fs-6 mb-2'>Home / Inmobiliarias / Rocchio Propiedades</p>
-          <h1 className="fw-bold mb-2 title">Rocchio Propiedades</h1>
+          <h1 className="fw-bold mb-2 title pt-2">Rocchio Propiedades</h1>
       </div>
       <div className='container-fluid my-4'>
           <div className="row gap-5">

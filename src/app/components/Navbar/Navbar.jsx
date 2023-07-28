@@ -69,7 +69,18 @@ function Navbar() {
 
       <div className="mobile-toggler d-md-none text-end nav-border" >
         <a className="d-md-none nav-border" data-bs-toggle="offcanvas" href="#mobile-nav" role="button" aria-controls="mobile-nav">
-          <FontAwesomeIcon id="mobile-toggler-icon" icon={faBars} className='p-3' style={{height: "1.8em", color: "#203656"}}/>
+            <div  className="hamburger-lines p-3">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
+            </div> 
+            <label id="mobile-toggler-icon" className="hamburger">
+              <div className="top-bun"></div>
+              <div className="meat"></div>
+              <div className="bottom-bun"></div>
+            </label> 
+          <div  className='menu-button p-3'></div>
+          {/* <FontAwesomeIcon  icon={faBars}  style={{height: "1.8em", color: "#203656"}}/> */}
         </a>
       </div>
       <div className="offcanvas offcanvas-end canvas nav-border" tabIndex="-1" id="mobile-nav" style={{ boxShadow: "-4px 0px 20px rgba(32,54,86,.1)" }}>
