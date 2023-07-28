@@ -21,9 +21,21 @@ function NoticiaHome(props) {
             <h5 className="card-title noticia-titulo mt-1 efecto-hover pb-1">{props.title}</h5>
           </a>
           <div className='border-top d-flex justify-content-between pt-3'>
-            <i className="fa-solid fa-share-nodes fs-5 efecto-hover"></i>
-            <a href="/blog/nota" style={{color: "#707a88"}}>
-                <i className="fa-solid fa-ellipsis fs-5 efecto-hover"></i>
+            <svg className="efecto-hover noticia-link" width="24" height="24" viewBox="0 0 24 24">
+              <path 
+                  d="M18,6 L6,12 L18,18"
+                  stroke="#707a88"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+              />
+              <circle cx="18" cy="6" r="3" fill="#707a88" />
+              <circle cx="6" cy="12" r="3" fill="#707a88" />
+              <circle cx="18" cy="18" r="3" fill="#707a88" />
+            </svg>
+            <a href="/blog/nota" className='noticia-link'>
+                <svg className="efecto-hover" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16"> <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" /> </svg>
             </a>
           </div>
         </div>

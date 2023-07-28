@@ -1,11 +1,11 @@
 "use client"
 
 import React from 'react'
-import SidebarTags from '../components/Blog/SidebarTags/SidebarTags'
-import SidebarCategorias from '../components/Blog/SidebarCategorias/SidebarCategorias'
-import SidebarNews from '../components/Blog/SidebarNews/SidebarNews'
+import SidebarTags from '../../components/Blog/SidebarTags/SidebarTags'
+import SidebarCategorias from '../../components/Blog/SidebarCategorias/SidebarCategorias'
+import SidebarNews from '../../components/Blog/SidebarNews/SidebarNews'
 import "./nota.css"
-import FormComentarios from '../components/Blog/FormComentarios/FormComentarios'
+import FormComentarios from '../../components/Blog/FormComentarios/FormComentarios'
 
 function Nota() {
   return (

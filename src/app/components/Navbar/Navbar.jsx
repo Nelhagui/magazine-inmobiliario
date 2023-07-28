@@ -24,7 +24,7 @@ function Navbar() {
               Blog
             </Link>
           </li>
-          <li className="dropdownn p-3 nav-item">
+          {/* <li className="dropdownn p-3 nav-item">
             <a className="pruebaa nav-link">Ediciones</a>
             <div className="dropdown-menuu">
               <li className="pt-2 pb-1">
@@ -46,7 +46,7 @@ function Navbar() {
                 </a>
               </li>
             </div>
-          </li>
+          </li> */}
           <li className="nav-item p-3">
             <Link className="nav-link" href="/servicios">
               Servicios

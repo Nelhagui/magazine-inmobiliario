@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react'
 import "./cardPropiedades.css"
 
 function CardPropiedades() {
-    const [windowWidth, setWindoWidth] = useState({
-        width: window.innerWidth,
-      });
+  let width
 
   useEffect(() => {
+   
     const handleResize = () => {
-      setWindoWidth(window.innerWidth)
+      width = window.innerWidth
     }
 
     window.addEventListener('resize', handleResize)
@@ -20,7 +19,7 @@ function CardPropiedades() {
 
   // Función para determinar qué componente renderizar
   const renderComponent = () => {
-    if (window && windowWidth >= 800) {
+    if (window && window.innerWidth >= 800) {
       return (
       <div className='d-flex px-4 pt-3 justify-content-center' style={{lineHeight:"20px"}}>
         <a href="/Inmobiliaria/propiedades/propiedad" className='propiedad-link'>
