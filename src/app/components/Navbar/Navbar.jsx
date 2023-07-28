@@ -32,7 +32,7 @@ function Navbar() {
           </li>
           <li className="dropdownn p-3 nav-item">
             <a className="pruebaa nav-link">Ediciones</a>
-            <div className="dropdown-menuu">
+            <ul className="dropdown-menuu">
               <li className="pt-2 pb-1">
                 <a
                   className="dropdown-item text-dark"
@@ -51,7 +51,7 @@ function Navbar() {
                   Edición Junio 2023
                 </a>
               </li>
-            </div>
+            </ul>
           </li>
           <li className="nav-item p-3">
             <Link className="nav-link" href="/servicios">
