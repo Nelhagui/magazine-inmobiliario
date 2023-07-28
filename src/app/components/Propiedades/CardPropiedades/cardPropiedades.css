@@ -9,7 +9,7 @@
 }
 
 .propiedad-listado {
-    height: 300px
+    height: 280px
 }
 
 .propiedad-link {
@@ -30,6 +30,10 @@
     display: flex
 }
 
+.btn-container {
+    margin: 0 .7em 1.5em 0;
+}
+
 @media screen and (max-width: 1180px) {
     .propiedad-listado {
         height: 300px
@@ -41,7 +45,17 @@
     .propiedades-icons {
         display: none
     }
+    .btn-container {
+        margin: 1.4em .7em 0 0;
+    }
 }
+
+@media screen and (max-width: 940px) {
+    .btn-container {
+        margin: 0;
+    }
+}
+
 
 @media screen and (max-width: 500px) {
     .propiedades-icons-sm {
