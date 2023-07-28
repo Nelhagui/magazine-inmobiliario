@@ -1,5 +1,6 @@
 import React from 'react'
 import "./cardServicios.css"
+import Link from 'next/link'
 
 function CardServicios(props) {
   return (
@@ -7,16 +8,16 @@ function CardServicios(props) {
         <div className="img-container">
           <a href="/" className="category-badge">{props.tag}</a>
           <div className='border-top rounded-top'>
-            <a href="/servicios/servicio">
+            <Link href="/servicios/servicio">
               <img src={props.img} className="card-img-top rounded-top" height="230" width="550" alt={props.title}/>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="card-body-servicios d-flex flex-column gap-1 border-top">
           <p className='my-1 noticia-autor fw-normal'>{props.ciudad}</p>
-          <a href="/servicios/servicio">
+          <Link href="/servicios/servicio">
             <h4 className="card-title noticia-titulo mt-1 fw-bold efecto-hover">{props.title}</h4>
-          </a>
+          </Link>
           <p className="card-text noticia-texto pb-1 fw-medium" style={{fontSize: "1rem"}}>Desde 1970, trabajando con Seriedad, respeto y confianza.</p>
           <div className='border-top d-flex justify-content-between pt-3 px-1'>
             <div className='d-flex efecto-hover'>
