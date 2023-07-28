@@ -24,7 +24,7 @@ function CardServicios(props) {
           <p className="card-text noticia-texto pb-1 fw-medium" style={{fontSize: "1rem"}}>Desde 1970, trabajando con Seriedad, respeto y confianza.</p>
           <div className='border-top d-flex justify-content-between pt-3 px-1'>
             <div className='d-flex efecto-hover'>
-              <FontAwesomeIcon icon={faShareNodes} className='efecto-hover' style={{width: "20px"}}/>
+              <FontAwesomeIcon icon={faShareNodes} className='efecto-hover fs-4'/>
             </div>
             <div className='d-flex efecto-hover'>
               <a href="/"><FontAwesomeIcon icon={faWhatsapp} className='servicios fs-4'/></a>    

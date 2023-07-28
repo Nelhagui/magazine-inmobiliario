@@ -34,7 +34,7 @@ function CardPropiedades() {
               <div className='image-container'>
                 <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className='responsive-image' alt="imagen" />
               </div>
-              <div className='d-flex flex-column justify-content-between p-1 '>
+              <div className='d-flex flex-column justify-content-center p-1 '>
                 <div className='d-flex gap-4 pt-1 ps-2'>
                   <h5 className='pt-2'>$ 100.000</h5>
                   <div className='d-flex flex-column border-start ps-3' style={{ lineHeight: "10px" }}>
@@ -53,7 +53,7 @@ function CardPropiedades() {
                 </div>
                 <h5 className='mt-0 pt-0'>Venta Local 182 m2 en Dome Business Plaza Italia</h5>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum.</p>
-                <div className='d-flex justify-content-end btn-container'>
+                <div className='d-flex justify-content-end btn-container me-3'>
                   <button className='btn btn-red fw-medium px-3 py-2'>Contactar</button>
                 </div>
               </div>
