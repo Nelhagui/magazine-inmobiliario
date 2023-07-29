@@ -50,9 +50,12 @@
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 970px) {
     .btn-container {
         margin: 0;
+    }
+    .propiedad-listado {
+        height: 320px
     }
 }
 
