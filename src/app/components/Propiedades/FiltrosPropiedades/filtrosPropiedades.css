@@ -5,8 +5,8 @@
   }
 
   .filtros-propiedades:hover {
-    color: #e63946;
+    color: #9b1b30;
     background-color: #fff;
-    border: 1px solid #e63946;
+    border: 1px solid #9b1b30;
     transition: all .2s ease-in-out;
   }

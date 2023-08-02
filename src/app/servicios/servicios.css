@@ -3,7 +3,7 @@
     }
 .search-form {
     height: 45px;
-    border: 1px solid #e63946;
+    border: 1px solid #9b1b30;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 18px;
@@ -35,13 +35,13 @@
     text-align: center;
     line-height: 4px;
     border-width: 0;
-    background-color: #e63946;
+    background-color: #9b1b30;
     border-radius: 18px;
     cursor: pointer;
     }
 
 .search-button:hover {
-    background-color: #e63946;
+    background-color: #9b1b30;
     opacity: .9;
     color: #fff
 }

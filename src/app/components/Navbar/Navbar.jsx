@@ -30,8 +30,18 @@ function Navbar() {
               Blog
             </Link>
           </li>
-          <li className="dropdownn p-3 nav-item">
-            <a className="pruebaa nav-link">Ediciones</a>
+          <li className="nav-item p-3">
+            <Link className="nav-link" href="/servicios">
+              Servicios
+            </Link>
+          </li>
+          <li className="nav-item p-3">
+            <Link className="nav-link" href="/contacto">
+              Contacto
+            </Link>
+          </li>
+          <li className="dropdownn p-2 nav-item">
+            <a className="pruebaa btn fw-medium">Revista Digital</a>
             <ul className="dropdown-menuu">
               <li className="py-2">
                 <a
@@ -52,21 +62,6 @@ function Navbar() {
                 </a>
               </li>
             </ul>
-          </li>
-          <li className="nav-item p-3">
-            <Link className="nav-link" href="/servicios">
-              Servicios
-            </Link>
-          </li>
-          <li className="nav-item p-3">
-            <Link className="nav-link" href="/propiedades">
-              Propiedades
-            </Link>
-          </li>
-          <li className="nav-item p-3">
-            <Link className="nav-link" href="/contacto">
-              Contacto
-            </Link>
           </li>
         </ul>
       </div>
@@ -100,9 +95,15 @@ function Navbar() {
               <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/blog" >Blog</Link>
               </li>
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
+                <Link className="nav-link" href="/servicios">Servicios</Link>
+              </li>
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
+                <Link className="nav-link" href="/contacto">Contacto</Link>
+              </li>
               <li className="canvas-li">
                 <div className="d-flex justify-content-between me-3">
-                  <Link className="nav-link" href="/">Ediciones</Link>
+                  <Link className="nav-link" href="/">Revista Digital</Link>
                   <FontAwesomeIcon icon={faAngleDown} onClick={toggleDiv} className="switch"/>
                 </div>
                 {
@@ -118,15 +119,6 @@ function Navbar() {
                   )
 
                 }
-              </li>
-              <li className="canvas-li" data-bs-dismiss="offcanvas">
-                <Link className="nav-link" href="/propiedades" >Propiedades</Link>
-              </li>
-              <li className="canvas-li" data-bs-dismiss="offcanvas">
-                <Link className="nav-link" href="/servicios">Servicios</Link>
-              </li>
-              <li className="canvas-li" data-bs-dismiss="offcanvas">
-                <Link className="nav-link" href="/contacto">Contacto</Link>
               </li>
             </ul>
           </div>

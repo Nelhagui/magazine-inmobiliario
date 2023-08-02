@@ -87,14 +87,7 @@ function Propiedad() {
                         <FormPropiedad/>
                     </div>
                 </div>
-                <div className='py-5'>
-                    <h4 className='px-3 text-center'>Propiedades similares</h4>
-                    <div className='d-flex flex-wrap gap-3 py-2 justify-content-center'>
-                        <PropiedadSimilar/>
-                        <PropiedadSimilar/>
-                        <PropiedadSimilar/>
-                    </div>
-                </div>
+              
             </div>
           )}
         </div>

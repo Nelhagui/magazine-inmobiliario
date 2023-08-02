@@ -99,20 +99,20 @@ button {
 }
 
 .btn-red {
-  background-color: #e63946;
+  background-color: #9b1b30;
   color: #fff;
   transition: all ease .4s;
   border-radius: 25px;
 }
 
 .btn-red:hover {
-  background-color: #e63946;
+  background-color: #9b1b30;
   opacity: .9;
   color: #fff
 }
 
 .efecto-hover:hover {
-  color: #e63946;
+  color: #9b1b30;
   transition: all .2s ease-in-out;
 }
 
@@ -299,7 +299,7 @@ button {
   top: 20px;
   position: relative;
   z-index: 2;
-  background-color: #e63946;
+  background-color: #9b1b30;
   background-size: 200% auto;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;

@@ -44,11 +44,11 @@ nav div ul li .nav-item {
 }
 
 .logo:hover {
-    color: #e63946
+    color: #9b1b30
 }
 
 .nav-item:hover {
-    color: #e63946;
+    color: #9b1b30;
 }
 
 .bg-menu {
@@ -130,7 +130,7 @@ nav div ul li .nav-item {
     padding: 10px;
     line-height: 1;
     cursor: pointer;
-    color: #e63946;
+    color: #9b1b30;
     position: absolute;
     top: 0;
     right: 0;
@@ -153,8 +153,14 @@ nav div ul li .nav-item {
     z-index: 2000;
 }
 
+.pruebaa {
+    background-color: #9b1b30 !important;
+    color: #fff !important;
+    
+}
+
 .dropdown-item:hover{
-    color: #e63946;
+    color: #9b1b30;
     font-weight: 500;
 }
 

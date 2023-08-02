@@ -6,9 +6,9 @@
 .btn-form-comentarios {
     color: #fff;
     padding: 9.5px 36px;
-    background: #e63946;
-    background: -webkit-linear-gradient(left,#e63946 0%,#ffa387 51%,#e63946 100%);
-    background: linear-gradient(to right,#e63946 0%,#ffa387 51%,#e63946 100%);
+    background: #9b1b30;
+    background: -webkit-linear-gradient(left,#9b1b30 0%,#ffa387 51%,#9b1b30 100%);
+    background: linear-gradient(to right,#9b1b30 0%,#ffa387 51%,#9b1b30 100%);
     background-size: 200% auto;
     border-radius: 25px;
     -webkit-transition: all .3s ease-in-out;

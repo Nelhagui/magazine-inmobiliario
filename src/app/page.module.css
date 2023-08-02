@@ -31,26 +31,38 @@
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	height: 42vh;
+	height: 60vh;
 }
 
 .header form {
-	max-width: 60%;
+	max-width: 70%;
+	background-color: #fff
+}
+
+.bgTransparent {
+	background-color: #f1f3f5;
+    max-width: 70%;
+	margin-left: 13em
+}
+
+.bgTransparent h6 {
+    color: #444;
+	font-weight: 500;
 }
 
 .bgRgba {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.6);
 	width: 100%;
 }
 
 .btnRed {
-	background-color: #e63946;
+	background-color: #9b1b30;
 	color: #fff;
 	transition: all ease .4s;
 }
 
 .btnRed:hover {
-	background-color: #e63946;
+	background-color: #9b1b30;
 	opacity: .9;
 	color: #fff
 }
@@ -73,22 +85,68 @@
 }
 
 .tags a:hover {
-    color: #e63946;
+    color: #9b1b30;
     outline: 0;
     text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    border: solid 1px #e63946;
+    border: solid 1px #9b1b30;
 }
 
-.titleHeader {
+.titleHeader h1{
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 38px;
 	color: #fff;
 	text-align: center;
 }
+
+.titleHeader span {
+	font-weight: 600;
+}
+
+.titleHeader p{
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+}
+
+/* Restablecer propiedades por defecto del select */
+.customSelectContainer {
+    position: relative;
+    background-color: #f1f3f5;
+    /* border: 1px solid #d8d8d6; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #222;
+	max-height: 65px;
+  }
+
+.customSelect {
+	display: block;
+    width: 100%;
+    font-size: .85rem;
+    line-height: 1.5;
+    border-radius: 100px;
+    border: 0;
+    color: #444;
+    padding: 10px 0 10px 10px;
+	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f1f3f5;
+    min-height: 37px;
+	text-transform: none;
+}
+
+.customSelectContainer select:focus {
+	outline: none; /* Eliminar el borde de enfoque */
+	box-shadow: none; /* Eliminar cualquier sombra de enfoque */
+  }
 
 @media (max-width: 900px) {
 	.title-header {
