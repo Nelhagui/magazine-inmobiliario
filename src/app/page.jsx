@@ -37,9 +37,9 @@ export default function Home() {
       <div className='container-xl py-5'>
           <div className='d-flex justify-content-between align-items-center'>
             <h3 className='px-3'>Propiedades Destacadas</h3>
-            <div className='d-flex gap-2'>
-              <p>Ver todas </p> 
-              <FontAwesomeIcon className='pt-1' icon={faArrowRight}></FontAwesomeIcon>
+            <div className='d-flex gap-2 align-items-center'>
+              <p>Ver todas <FontAwesomeIcon className='ms-2' icon={faArrowRight}></FontAwesomeIcon></p> 
+              
             </div>
           </div>
           <div className='d-flex flex-wrap gap-4 py-2 justify-content-center'>

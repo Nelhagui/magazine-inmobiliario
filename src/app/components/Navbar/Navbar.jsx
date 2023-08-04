@@ -31,6 +31,11 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item p-3">
+            <Link className="nav-link" href="/propiedades">
+              Propiedades
+            </Link>
+          </li>
+          <li className="nav-item p-3">
             <Link className="nav-link" href="/servicios">
               Servicios
             </Link>
@@ -94,6 +99,9 @@ function Navbar() {
               </li>
               <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/blog" >Blog</Link>
+              </li>
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
+                <Link className="nav-link" href="/propiedades">Propiedades</Link>
               </li>
               <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/servicios">Servicios</Link>

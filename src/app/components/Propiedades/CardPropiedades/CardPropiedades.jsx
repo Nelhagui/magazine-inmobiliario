@@ -3,6 +3,7 @@ import "./cardPropiedades.css"
 import Link from 'next/link';
 import { faBath, faBed, faCar, faHouse, faRulerVertical } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function CardPropiedades() {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -55,7 +56,10 @@ function CardPropiedades() {
                   <h5 className='mt-0 pt-0'>Venta Local 182 m2 en Dome Business Plaza Italia</h5>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam praesentium rem dolorum.</p>
                  </div>
-                 <div className='d-flex justify-content-end btn-container'>
+                 <div className='d-flex justify-content-end gap-2 btn-container'>
+                   <button className='btn-wp fw-medium py-2'>
+                      <FontAwesomeIcon icon={faWhatsapp} style={{color: "white"}}/>
+                   </button>
                    <button className='btn btn-red fw-medium py-2'>Contactar</button>
                  </div>
                </div>

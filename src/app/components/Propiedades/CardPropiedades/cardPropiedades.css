@@ -1,3 +1,19 @@
+.btn-wp {
+    background-color: rgb(37, 211, 102);
+    color: white;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    border-radius: 50%;
+    margin-block: auto;
+    text-align: center;
+    font-size: 16px;
+    width: auto;
+    line-height: 48px;
+}
+
 .propiedad-listado {
     height: 280px;
 }

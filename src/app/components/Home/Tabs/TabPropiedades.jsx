@@ -13,7 +13,7 @@ function TabPropiedades() {
     return (
         <form action="" className="formHeader rounded py-3 pe-2 mb-3 gap-2 mx-auto d-flex justify-content-evenly align-items-center gy-2"  >
             <div className="customSelectContainer ps-2" >
-                <FontAwesomeIcon icon={faLocationDot} />
+                <FontAwesomeIcon className="ps-1" icon={faLocationDot} />
                 <select className="pe-5 customSelect" aria-label="Default select example" value={localidadSeleccionada} defaultValue={"placeholder"} onChange={(e) => setLocalidadSeleccionada(e.target.value)}>
                     <option disabled value={"placeholder"}>Localidad</option>
                     <option value={"small"}>Villa Urquiza</option>
@@ -23,7 +23,7 @@ function TabPropiedades() {
 
             </div>
             <div className="customSelectContainer ps-2" >
-                <FontAwesomeIcon icon={faHouseChimney} />
+                <FontAwesomeIcon className="ps-1" icon={faHouseChimney} />
                 <select className="pe-5 customSelect" aria-label="Default select example" value={tipoPropiedadSeleccionada} defaultValue={"placeholder"} onChange={(e) => setTipoPropiedadSeleccionada(e.target.value)}>
                     <option disabled value={"placeholder"}>Tipo de Propiedad</option>
                     <option value={"small"}>Compra</option>
@@ -33,7 +33,7 @@ function TabPropiedades() {
 
             </div>
             <div className="customSelectContainer ps-2" >
-                <FontAwesomeIcon icon={faCouch} />
+                <FontAwesomeIcon className="ps-1" icon={faCouch} />
                 <select className="pe-5 customSelect" aria-label="Default select example" value={ambienteSeleccionado} defaultValue={"placeholder"} onChange={(e) => setAmbienteSeleccionado(e.target.value)}>
                     <option disabled value={"placeholder"}>Ambientes</option>
                     <option value={"small"}>Compra</option>
@@ -43,7 +43,7 @@ function TabPropiedades() {
 
             </div>
             <div className="customSelectContainer ps-2" >
-                <FontAwesomeIcon icon={faHandshake} />
+                <FontAwesomeIcon className="ps-1" icon={faHandshake} />
                 <select className="pe-5 customSelect" aria-label="Default select example" value={operacionSeleccionada} defaultValue={"placeholder"} onChange={(e) => setOperacionSeleccionada(e.target.value)}>
                     <option disabled value={"placeholder"}>Operación</option>
                     <option value={"small"}>Compra</option>
