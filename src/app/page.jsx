@@ -14,7 +14,7 @@ export default function Home() {
     <main className={styles.main}>
        <div className={`${styles.header} d-flex mx-auto`} style={{background: "url('/header.png')"}}>
         <div className={`${styles.bgRgba} d-flex flex-column justify-content-center align-items-center text-light text-center`} >
-          <div className={`${styles.titleHeader} w-50`}>
+          <div className={`${styles.titleHeader} `}>
             <h1 className="pb-2">Todo lo que necesitas para tu <span>hogar</span> en <span>un solo click</span></h1>
             <p>Usa nuestro <span>buscador</span> para encontrar <span>propiedades o servicios</span></p>
           </div>
