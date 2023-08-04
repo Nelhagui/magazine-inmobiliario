@@ -9,8 +9,8 @@ import TabPropiedades from '../components/Home/Tabs/TabPropiedades'
 function Propiedades() {
   return (
     <div className='pb-3 mt-2 container-fluid'>
-      {/* <FiltrosPropiedades/> */}
-      <TabPropiedades/>
+      <FiltrosPropiedades/>
+      {/* <TabPropiedades/> */}
       <CardPropiedades/>
       <CardPropiedades/>
       <CardPropiedades/>
