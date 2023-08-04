@@ -68,7 +68,7 @@
 	width: 50%
 }
 
-.titleHeader h1{
+.titleHeaderh1{
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 	font-weight: 500;
 	font-size: 38px;
@@ -87,14 +87,19 @@
 	text-align: center;
 }
 
+
 @media (max-width: 1000px) {
 	.titleHeader {
 		margin-top: 22px;
 		width: 80%
 	}
 
-	.title-header h1 {
+	.titleh1 {
 		font-size: 22px;
+	}
+
+	.headerp {
+		font-size: 11px;
 	}
 
 	.header {
@@ -104,6 +109,15 @@
 	.header form {
 		max-width: 90%;
 	}
+}
+
+
+@media (max-width: 600px) {
+	.titleHeader {
+		margin-top: 22px;
+		width: 90%
+	}
+	
 }
 
 
