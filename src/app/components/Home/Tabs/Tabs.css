@@ -1,0 +1,67 @@
+.tab {
+    display: inline-block;
+    width: 1000px;
+    margin: 0 0 0 25px;
+    list-style-type: none;
+    padding: 12px 12px 0;
+}
+
+.tabItem {
+    float: left;
+    height: 44px;
+    margin: 0 0 -7px 0;
+    min-width: 150px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    color: #000;
+    font-weight: 600;
+    transition: all ease .2s;
+}
+
+.tabSelected {
+    background: #9b1b30;
+    border: none;
+}
+
+.tabSelected {
+    color: #fff
+}
+
+.formHeader {
+	max-width: 1000px;
+	background-color: #fff;
+}
+
+
+/* Restablecer propiedades por defecto del select */
+.customSelectContainer {
+    position: relative;
+    background-color: #f1f3f5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: #222;
+	padding-block: 5px;
+  }
+
+.customSelect {
+	display: block;
+    width: 100%;
+    font-size: .85rem;
+    line-height: 1.5;
+    border-radius: 100px;
+    border: 0;
+    color: #444;
+    padding: 10px 0 10px 10px;
+	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f1f3f5;
+    min-height: 37px;
+	text-transform: none;
+}
+
+.customSelectContainer select:focus {
+	outline: none; /* Eliminar el borde de enfoque */
+	box-shadow: none; /* Eliminar cualquier sombra de enfoque */
+  }

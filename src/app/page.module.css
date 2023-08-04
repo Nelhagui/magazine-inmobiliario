@@ -24,7 +24,6 @@
 	transition: all ease .5s;
 }
 
-
 /* HEADER */
 
 .header {
@@ -34,10 +33,7 @@
 	height: 60vh;
 }
 
-.header form {
-	max-width: 70%;
-	background-color: #fff
-}
+
 
 .bgTransparent {
 	background-color: #f1f3f5;
@@ -54,19 +50,6 @@
 	background-color: rgba(0, 0, 0, 0.6);
 	width: 100%;
 }
-
-.btnRed {
-	background-color: #9b1b30;
-	color: #fff;
-	transition: all ease .4s;
-}
-
-.btnRed:hover {
-	background-color: #9b1b30;
-	opacity: .9;
-	color: #fff
-}
-
 
 .tags a {
     border: solid 1px #ebebeb;
@@ -112,41 +95,6 @@
 	color: #fff;
 	text-align: center;
 }
-
-/* Restablecer propiedades por defecto del select */
-.customSelectContainer {
-    position: relative;
-    background-color: #f1f3f5;
-    /* border: 1px solid #d8d8d6; */
-    border-radius: 10px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: #222;
-	max-height: 65px;
-  }
-
-.customSelect {
-	display: block;
-    width: 100%;
-    font-size: .85rem;
-    line-height: 1.5;
-    border-radius: 100px;
-    border: 0;
-    color: #444;
-    padding: 10px 0 10px 10px;
-	appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #f1f3f5;
-    min-height: 37px;
-	text-transform: none;
-}
-
-.customSelectContainer select:focus {
-	outline: none; /* Eliminar el borde de enfoque */
-	box-shadow: none; /* Eliminar cualquier sombra de enfoque */
-  }
 
 @media (max-width: 900px) {
 	.title-header {
