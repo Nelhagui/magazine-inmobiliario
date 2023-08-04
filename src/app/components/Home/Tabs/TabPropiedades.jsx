@@ -52,7 +52,7 @@ function TabPropiedades() {
                 </select>
 
             </div>
-            <button className="btn-red btn fw-semibold px-3 py-2">
+            <button className="btn-red btn fw-semibold px-3 py-3">
                 <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-6 me-2' />
                 Buscar
             </button>
