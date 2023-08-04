@@ -5,6 +5,8 @@ import SobreNosotros from './components/Home/SobreNosotros/SobreNosotros'
 import NoticiaHome from './components/Home/NoticiaHome/NoticiaHome'
 import PropiedadSimilar from './components/Propiedad/PropiedadSimilar/PropiedadSimilar'
 import Tabs from './components/Home/Tabs/Tabs'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
 
@@ -33,13 +35,17 @@ export default function Home() {
           </div>
       </div>
       <div className='container-xl py-5'>
-          <div className='d-flex justify-content-between'>
-            <h4 className='px-3'>Propiedades Destacadas</h4>
-            <p>Ver todas</p>
+          <div className='d-flex justify-content-between align-items-center'>
+            <h3 className='px-3'>Propiedades Destacadas</h3>
+            <div className='d-flex gap-2'>
+              <p>Ver todas </p> 
+              <FontAwesomeIcon className='pt-1' icon={faArrowRight}></FontAwesomeIcon>
+            </div>
           </div>
           <div className='d-flex flex-wrap gap-4 py-2 justify-content-center'>
               <PropiedadSimilar/>
-             
+              <PropiedadSimilar/>
+              <PropiedadSimilar/>
           </div>
       </div>
       <div id="projects" className="cards-2 pt-2 pb-4 bg-light">
