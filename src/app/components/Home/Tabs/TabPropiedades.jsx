@@ -11,7 +11,7 @@ function TabPropiedades() {
     const [ambienteSeleccionado, setAmbienteSeleccionado] = useState()
     const [tipoPropiedadSeleccionada, setTipoPropiedadSeleccionada] = useState()
     return (
-        <form action="" className="formHeader rounded py-3 pe-2 mb-3 gap-2 mx-auto d-flex justify-content-evenly align-items-center gy-2"  >
+        <form action="" className="formHeader rounded px-2 py-3 pe-2 mb-3 gap-2 mx-auto d-flex justify-content-evenly align-items-center gy-2"  >
             <div className="customSelectContainer ps-2" >
                 <FontAwesomeIcon className="ps-1" icon={faLocationDot} />
                 <select className="pe-5 customSelect" aria-label="Default select example" value={localidadSeleccionada} defaultValue={"placeholder"} onChange={(e) => setLocalidadSeleccionada(e.target.value)}>
