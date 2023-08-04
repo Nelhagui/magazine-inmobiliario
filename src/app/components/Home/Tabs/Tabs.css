@@ -6,6 +6,10 @@
     padding: 12px 12px 0;
 }
 
+.tabServicios {
+    width: 84%
+}
+
 .tabItem {
     float: left;
     height: 44px;
@@ -77,6 +81,10 @@
 @media screen and (max-width: 1000px) {
     .tab {
         width: 600px;
+    }
+
+    .tabServicios {
+        width: 100%
     }
 }
 
