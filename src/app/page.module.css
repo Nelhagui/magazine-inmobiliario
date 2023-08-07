@@ -64,10 +64,6 @@
     border: solid 1px #9b1b30;
 }
 
-.titleHeader {
-	width: 50%
-}
-
 .titleHeaderh1{
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 	font-weight: 500;
