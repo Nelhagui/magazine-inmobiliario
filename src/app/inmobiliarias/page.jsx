@@ -2,6 +2,7 @@ import React from 'react'
 import CardServicios from '../components/Servicios/CardServicios/CardServicios'
 import Pagination from '../components/Pagination/Pagination'
 import { servicios } from '../data.js'
+import "../servicios/servicios.css"
 
 function Inmobiliarias() {
   return (

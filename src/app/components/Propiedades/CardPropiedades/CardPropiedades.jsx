@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "./cardPropiedades.css"
-import Link from 'next/link';
 import { faBath, faBed, faCar, faHouse, faRulerVertical } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -11,17 +10,12 @@ function CardPropiedades(props) {
 
   useEffect(() => {
     const handleResize = () => {
-      // Check the window width and set the state accordingly
       setIsDesktop(window.innerWidth >= 835);
     };
 
-    // Set initial state based on window width on component mount
     handleResize();
-
-    // Add event listener to update state when window is resized
     window.addEventListener('resize', handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };

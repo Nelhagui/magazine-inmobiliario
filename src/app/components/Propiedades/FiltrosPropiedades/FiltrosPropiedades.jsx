@@ -9,7 +9,8 @@ function FiltrosPropiedades() {
     const [operacionSeleccionado, setOperacionSeleccionada] = useState('Operación');
     const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Localidad');
     const [tipoSeleccionado, setTipoSeleccionado] = useState('Tipo de Propiedad');
-  return (
+  
+    return (
     <div className='d-flex flex-wrap justify-content-center align-items-center mx-auto gap-2 pt-3 pb-2'>
       <div className="dropdown d-flex justify-content-md-end justify-content-center ">
         <button className="dropdown-toggle filtros-propiedades" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,7 +78,7 @@ function FiltrosPropiedades() {
           </li>
         </ul>
       </div>
-      <button className="btn-red px-3 py-2">
+      <button className="btn-red px-3 py-2 d-none d-md-flex">
           <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-6 me-2' />
           Buscar
       </button>
