@@ -1,23 +1,23 @@
-import { faCouch, faHouseChimney, faLocationDot, faMagnifyingGlass, faRulerVertical } from '@fortawesome/free-solid-svg-icons'
+import { faCouch, faHouseChimney, faLocationDot, faMagnifyingGlass, faRulerVertical, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import "./propiedadSimilar.css"
 
-function PropiedadSimilar() {
+function PropiedadSimilar(props) {
   return (
     <div className="card mb-2" style={{width: "auto", maxWidth: "320px"}}>
-        <img height="250" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className="card-img-top" alt="imagen"/>
-        <div className="card-body px-3 py-4">
+        <img height="250" src={props.img} className="card-img-top propiedad-imagen" alt="imagen"/>
+        <div className="card-body px-4 py-4">
             <div className='d-flex text-dark'>
               <FontAwesomeIcon icon={faHouseChimney} className='pe-2' style={{width: "20px"}}/>
-              <p className='pe-2 text-dark' style={{fontSize: "14px"}}>Departamento</p>
+              <p className='pe-2 text-dark' style={{fontSize: "14px"}}>{props.propiedad}</p>
               <FontAwesomeIcon icon={faLocationDot} className='pe-1' style={{width: "20px"}}/>
-              <p className='pe-2 text-dark' style={{fontSize: "14px"}}>San Martin</p>
+              <p className='pe-2 text-dark' style={{fontSize: "14px"}}>{props.localidad}</p>
             </div>
             <div className='d-flex text-dark'>
               <FontAwesomeIcon icon={faCouch} className='pe-2' style={{width: "18px"}}/>
-              <p className='pe-2 text-dark' style={{fontSize: "14px"}}>3 Ambientes</p>
-              <FontAwesomeIcon icon={faRulerVertical}  style={{width: "20px"}}/>
-              <p className='pe-2 text-dark' style={{fontSize: "14px"}}>40 m²</p>
+              <p className='pe-3 text-dark' style={{fontSize: "14px"}}>3 Ambientes</p>
+              <FontAwesomeIcon icon={faUpRightAndDownLeftFromCenter}  style={{height: "14px"}}/>
+              <p className='pe-2 ps-1 text-dark ' style={{fontSize: "14px"}}>40 m²</p>
             </div>
             
             <div className='d-flex align-items-center justify-content-between'>
@@ -25,7 +25,7 @@ function PropiedadSimilar() {
                   <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-6 me-2' />
                   Más Info
                 </button>
-                <h5 className='pt-1 fw-semibold text-dark'>USD 80.000</h5>
+                <h5 className='fw-semibold text-dark pt-2 pe-1'>USD {props.precio}</h5>
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@ import { faBath, faBed, faCar, faHouse, faRulerVertical } from '@fortawesome/fre
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
-function CardPropiedades() {
+function CardPropiedades(props) {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function CardPropiedades() {
            <Link href="/propiedades/propiedad" className='propiedad-link'>
              <div className='d-flex bg-white justify-content-between gap-2 border propiedad-listado rounded-4'>
                <div className='image-container'>
-                 <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" className='responsive-image' alt="imagen" />
+                 <img src={props.img} className='responsive-image' alt="imagen" style={{maxWidth: "370px"}}/>
                </div>
                <div className='d-flex flex-column pe-4 ps-2 py-2 '>
                  <div className='d-flex gap-4 pt-1 ps-2'>

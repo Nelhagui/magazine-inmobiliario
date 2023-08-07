@@ -30,7 +30,7 @@
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	height: 60vh;
+	height: 57vh;
 }
 
 .bgRgba {
@@ -71,7 +71,7 @@
 .titleHeaderh1{
 	text-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
 	font-weight: 500;
-	font-size: 2.3em;
+	font-size: 36px !important;
 	color: #fff;
 	text-align: center;
 }
@@ -95,11 +95,11 @@
 	}
 
 	.titleh1 {
-		font-size: 22px !important;
+		font-size: 32px !important;
 	}
 
 	.headerp {
-		font-size: 11px;
+		font-size: 15px;
 	}
 
 	.header {
@@ -117,7 +117,9 @@
 		margin-top: 22px;
 		width: 90%
 	}
-	
+	.titleh1 {
+		font-size: 22px !important;
+	}
 }
 
 

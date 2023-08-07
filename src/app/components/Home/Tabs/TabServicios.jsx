@@ -7,8 +7,8 @@ function TabServicios() {
             <div className='tabServicios d-flex align-items-center'>
                 <input className="form-control w-100 customSelect py-3 ps-4" type="search" placeholder="Buscar Servicios..." aria-label="Search" />
             </div>
-            <div className='mx-auto'>
-                <button className="btn-red btn fw-semibold py-3 px-4">
+            <div className='m-auto'>
+                <button className="btn-red btn fw-semibold px-3 py-2">
                     <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-6 me-2' />
                     Buscar
                 </button>

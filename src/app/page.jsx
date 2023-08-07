@@ -37,16 +37,15 @@ export default function Home() {
       </div>
       <div className='container-xl py-5'>
           <div className='d-flex justify-content-between align-items-center'>
-            <h3 className='px-3'>Propiedades Destacadas</h3>
-            <div className='d-flex gap-2 align-items-center'>
-              <p>Ver todas <FontAwesomeIcon className='ms-2' icon={faArrowRight}></FontAwesomeIcon></p> 
-              
+            <h3 className='ps-5'>Propiedades Destacadas</h3>
+            <div className='d-flex gap-2 align-items-center mt-3 pe-5 me-2 '>
+              <p className='text-dark'>Ver todas <FontAwesomeIcon className='ms-2' icon={faArrowRight}></FontAwesomeIcon></p> 
             </div>
           </div>
-          <div className='d-flex flex-wrap gap-4 py-2 justify-content-center'>
-              <PropiedadSimilar/>
-              <PropiedadSimilar/>
-              <PropiedadSimilar/>
+          <div className='d-flex flex-wrap py-2 justify-content-evenly'>
+              <PropiedadSimilar localidad={"José León Suárez"} precio={"85.000"} propiedad={"Casa"} img={"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"}/>
+              <PropiedadSimilar localidad={"San Martín"} precio={"70.000"} propiedad={"Departamento"} img={"https://images.unsplash.com/photo-1631510390389-c1e4fb20ff31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=792&q=80"}/>
+              <PropiedadSimilar localidad={"Villa Ballester"} precio={"120.000"} propiedad={"Departamento"} img={"https://plus.unsplash.com/premium_photo-1663126298656-33616be83c32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"}/>
           </div>
       </div>
       <div id="projects" className="cards-2 pt-2 pb-4 bg-light">
