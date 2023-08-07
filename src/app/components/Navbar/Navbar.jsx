@@ -16,7 +16,7 @@ function Navbar() {
       <div className="row nav-border">
         <div className="d-none col-3 d-md-flex justify-content-center ">
           <a href="/" className="fw-700 my-auto logo">
-            <img src="./logo.png" alt="Magazine Inmobiliario" width="140" placeholder="blur" blurdataurl={'./logo.png'} />
+            <img className="d-none d-xl-inline-block" src="./logo.png" alt="Magazine Inmobiliario" width="140" placeholder="blur" blurdataurl={'./logo.png'} />
           </a>
         </div>
         <ul className="d-none col-9 d-md-flex justify-content-end my-auto">
@@ -38,6 +38,11 @@ function Navbar() {
           <li className="nav-item p-3">
             <Link className="nav-link" href="/servicios">
               Servicios
+            </Link>
+          </li>
+          <li className="nav-item p-3">
+            <Link className="nav-link" href="/inmobiliarias">
+              Inmobiliarias
             </Link>
           </li>
           <li className="nav-item p-3">
@@ -105,6 +110,9 @@ function Navbar() {
               </li>
               <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/servicios">Servicios</Link>
+              </li>
+              <li className="canvas-li" data-bs-dismiss="offcanvas">
+                <Link className="nav-link" href="/inmobiliarias">Inmobiliarias</Link>
               </li>
               <li className="canvas-li" data-bs-dismiss="offcanvas">
                 <Link className="nav-link" href="/contacto">Contacto</Link>

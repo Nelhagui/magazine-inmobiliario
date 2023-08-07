@@ -10,7 +10,7 @@ function FiltrosPropiedades() {
     const [localidadSeleccionada, setLocalidadSeleccionada] = useState('Localidad');
     const [tipoSeleccionado, setTipoSeleccionado] = useState('Tipo de Propiedad');
   return (
-    <div className='formHeader d-flex justify-content-center align-items-center mx-auto gap-2 pt-3 pb-2'>
+    <div className='d-flex flex-wrap justify-content-center align-items-center mx-auto gap-2 pt-3 pb-2'>
       <div className="dropdown d-flex justify-content-md-end justify-content-center ">
         <button className="dropdown-toggle filtros-propiedades" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           {localidadSeleccionada}
@@ -44,13 +44,21 @@ function FiltrosPropiedades() {
           {ambientesSeleccionado}
         </button>
         <ul className="dropdown-menu">
-          {
-              ciudades.map(ciudad => (
-                <li key={ciudad} >
-                  <button className="dropdown-item" type="button">{ciudad}</button>
-                </li>   
-              ))
-          }
+          <li>
+            <button className="dropdown-item" type="button">Monoambiente</button>
+          </li>
+          <li>
+            <button className="dropdown-item" type="button">2 ambientes</button>
+          </li>
+          <li>
+            <button className="dropdown-item" type="button">3 ambientes</button>
+          </li>
+          <li>
+            <button className="dropdown-item" type="button">4 ambientes</button>
+          </li>
+          <li>
+            <button className="dropdown-item" type="button">5 ambientes o más</button>
+          </li>
         </ul>
       </div>
       <div className="dropdown d-flex justify-content-md-start justify-content-center ">
@@ -58,16 +66,18 @@ function FiltrosPropiedades() {
           {operacionSeleccionado}
         </button>
         <ul className="dropdown-menu">
-          {
-              tiposPropiedad.map(tipo => (
-                <li key={tipo} >
-                  <button className="dropdown-item" type="button">{tipo}</button>
-                </li>  
-              ))
-            } 
+          <li>
+            <button className="dropdown-item" type="button">Alquilar</button>
+          </li>
+          <li>
+            <button className="dropdown-item" type="button">Comprar</button>
+          </li>
+          <li>
+            <button className="dropdown-item" type="button">Temporal</button>
+          </li>
         </ul>
       </div>
-      <button className="btn-red btn fw-semibold px-3 py-3">
+      <button className="btn-red px-3 py-2">
           <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-6 me-2' />
           Buscar
       </button>
