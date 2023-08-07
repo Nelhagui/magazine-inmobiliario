@@ -1,5 +1,6 @@
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 
 function TabServicios() {
     return (
@@ -8,10 +9,10 @@ function TabServicios() {
                 <input className="form-control w-100 customSelect py-3 ps-4" type="search" placeholder="Buscar Servicios..." aria-label="Search" />
             </div>
             <div className='m-auto'>
-                <button className="btn-red btn fw-semibold px-3 py-2">
+                <Link className="btn-red btn fw-semibold px-3 py-2" href="/servicios">
                     <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-6 me-2' />
                     Buscar
-                </button>
+                </Link>
             </div>
         </form>
     )

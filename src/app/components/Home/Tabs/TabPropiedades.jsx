@@ -4,6 +4,7 @@ import { faCouch, faHandshake, faHouseChimney, faLocationDot, faMagnifyingGlass 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import "./Tabs.css"
+import Link from 'next/link'
 
 function TabPropiedades() {
     const [operacionSeleccionada, setOperacionSeleccionada] = useState()
@@ -52,10 +53,11 @@ function TabPropiedades() {
                 </select>
 
             </div>
-            <button className="btn-red btn fw-semibold px-3 py-2">
+            <Link className="btn-red btn fw-semibold px-3 py-2" href="/propiedades">
                 <FontAwesomeIcon icon={faMagnifyingGlass} className='fs-6 me-2' />
                 Buscar
-            </button>
+            </Link>
+           
         </form>
     )
 }
