@@ -64,7 +64,6 @@ function CardPropiedades(props) {
                     <button className='btn-wp fw-medium py-2'>
                       <FontAwesomeIcon icon={faWhatsapp} style={{ color: "white" }} />
                     </button>
-                    <button className='btn-contactar fw-medium'>Contactar</button>
                   </div>
                 </div>
               </div>
@@ -100,7 +99,6 @@ function CardPropiedades(props) {
                   <button className='btn-wp fw-medium py-2'>
                     <FontAwesomeIcon icon={faWhatsapp} style={{ color: "white" }} />
                   </button>
-                  <button className='btn-contactar fw-medium'>Contactar</button>
                 </div>
               </div>
             </div>
