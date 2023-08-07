@@ -18,8 +18,8 @@ function TabPropiedades() {
                 <select className="pe-5 customSelect" aria-label="Default select example" value={localidadSeleccionada} defaultValue={"placeholder"} onChange={(e) => setLocalidadSeleccionada(e.target.value)}>
                     <option disabled value={"placeholder"}>Localidad</option>
                     <option value={"small"}>Villa Urquiza</option>
-                    <option value={"big"}>Venta</option>
-                    <option value={"big"}>Alquiler</option>
+                    <option value={"big"}>San Martin</option>
+                    <option value={"big"}>Palomar</option>
                 </select>
 
             </div>
@@ -27,9 +27,9 @@ function TabPropiedades() {
                 <FontAwesomeIcon className="ps-1" icon={faHouseChimney} />
                 <select className="pe-5 customSelect" aria-label="Default select example" value={tipoPropiedadSeleccionada} defaultValue={"placeholder"} onChange={(e) => setTipoPropiedadSeleccionada(e.target.value)}>
                     <option disabled value={"placeholder"}>Tipo de Propiedad</option>
-                    <option value={"small"}>Compra</option>
-                    <option value={"big"}>Venta</option>
-                    <option value={"big"}>Alquiler</option>
+                    <option value={"small"}>Casa</option>
+                    <option value={"big"}>Departamento</option>
+                    <option value={"big"}>Ph</option>
                 </select>
 
             </div>
@@ -37,9 +37,11 @@ function TabPropiedades() {
                 <FontAwesomeIcon className="ps-1" icon={faCouch} />
                 <select className="pe-5 customSelect" aria-label="Default select example" value={ambienteSeleccionado} defaultValue={"placeholder"} onChange={(e) => setAmbienteSeleccionado(e.target.value)}>
                     <option disabled value={"placeholder"}>Ambientes</option>
-                    <option value={"small"}>Compra</option>
-                    <option value={"big"}>Venta</option>
-                    <option value={"big"}>Alquiler</option>
+                    <option value={"small"}>Monoambiente</option>
+                    <option value={"big"}>2 ambientes</option>
+                    <option value={"big"}>3 ambientes</option>
+                    <option value={"4"}>4 ambientes</option>
+                    <option value={"5"}>5 o más ambientes</option>
                 </select>
 
             </div>
