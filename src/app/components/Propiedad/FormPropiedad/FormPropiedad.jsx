@@ -1,9 +1,11 @@
 import React from 'react'
 import "./formPropiedad.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function FormPropiedad() {
   return (
-    <div className='col-md-4 col-sm-10 form-prueba'>
+    <div className='form-prueba'>
         <form action="" method="post" className='form-propiedad mt-2 px-3 rounded bordered padding-30 '>
             <div className='text-center pb-2'>
                 <h5 className='fw-bold mb-0'>Contactar a la Inmobiliaria</h5>
@@ -36,22 +38,6 @@ function FormPropiedad() {
                     required=""
                 />
             </p>
-            <p className="comment-form-asunto">
-                <label htmlFor="telefono">Telefono 
-                    <span className="required"> *</span>
-                </label> 
-                <input 
-                    id="telefono" 
-                    name="telefono" 
-                    type="telefono" 
-                    size="30" 
-                    maxLength="100" 
-                    aria-describedby="telefono-notes" 
-                    autoComplete="telefono"
-                    className='form-control'
-                    required=""
-                />
-            </p>
             <p className="comment-form-comment">
                 <label htmlFor="comment">Mensaje</label>
                 <textarea 
@@ -63,10 +49,14 @@ function FormPropiedad() {
                     required
                     placeholder='Hola, me interesa esta propiedad que vi en Magazine Inmobiliario y quisiera que me contacten. Muchas gracias.'
                     className='form-control'
-                    style={{minHeight:"70px"}}
+                    style={{minHeight:"80px"}}
                     ></textarea>
             </p>
             <button type="submit" className='btn-red col-12' data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+            <button className='btn-light col-12 mt-2 rounded text-light' data-bs-toggle="modal" data-bs-target="#exampleModal" style={{backgroundColor: "#25D366"}}>
+                <FontAwesomeIcon className="fs-4 me-2" style={{marginBottom:"-3px", color: "#fff"}} icon={faWhatsapp}/>
+                Contactar por Whatsapp
+            </button>
         </form>          
     </div>
   )

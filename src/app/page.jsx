@@ -12,17 +12,18 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-       <div className={`${styles.header} d-flex mx-auto`} style={{background: "url('/header.png')"}}>
-        <div className={`${styles.bgRgba} d-flex flex-column justify-content-center align-items-center text-light text-center`} >
+       <div className={`${styles.header} d-flex mx-auto`}>
+        <img className={styles.imgHeader} src="/header.png" alt="" />
+        <div className={`${styles.bgRgba}`} >
           <div className={`${styles.titleHeader} `}>
-            <h1 className={`${styles.titleh1}`}>Todo lo que necesitás para</h1>
-            <h1 className={`${styles.titleh1} pb-2`}>tu <span>hogar</span> en <span>un solo click</span></h1>
+            <h1 className={`${styles.titleHeaderh1}`}>Todo lo que necesitás para</h1>
+            <h1 className={`${styles.titleHeaderh1} pb-2`}>tu <span>hogar</span> en <span>un solo click</span></h1>
             <p className={`${styles.headerp}`}>Usá nuestro <span>buscador</span> para encontrar <span>propiedades o servicios</span></p>
           </div>
           <Tabs/>
         </div>
       </div>
-      <div className="container">
+      <div className="container" >
           <div className="row">
               <div className={`${styles.tags} d-flex flex-wrap justify-content-center gap-3 py-4`}>
                   {

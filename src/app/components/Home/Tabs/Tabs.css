@@ -33,19 +33,17 @@
 
 .formHeader {
 	max-width: 1000px;
-    width: 100%; /* Ocupará el ancho completo de la pantalla */
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 	background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10)
 }
 
-
-/* Restablecer propiedades por defecto del select */
 .customSelectContainer {
-    flex: 1; /* Ocupa el espacio disponible en partes iguales */
-    min-width: 200px; /* Establece un ancho mínimo para cada div */
-    margin: 3px; /* Espacio entre los divs (puedes ajustarlo según tus necesidades) */
+    flex: 1; 
+    min-width: 200px;
+    margin: 3px; 
     box-sizing: border-box; 
     background-color: #f1f3f5;
     border-radius: 10px;
@@ -81,6 +79,7 @@
 @media screen and (max-width: 1000px) {
     .tab {
         width: 600px;
+        margin: auto
     }
 
     .tabServicios {
@@ -91,5 +90,18 @@
 @media screen and (max-width: 650px) {
     .tab {
         width: 340px;
+        margin: auto
     }
+}
+
+@media screen and (max-width: 380px) {
+    .tab {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .tabItem {
+        min-width: 110px;
+    }
+    
 }

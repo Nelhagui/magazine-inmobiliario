@@ -54,7 +54,14 @@ function Propiedad() {
                          <p>Hernan Cortez 1258, Tristán Suárez</p>
                      </div>
                  </div>
-                 <FormPropiedad/>
+                 <div className='col-md-4 col-sm-10 form-prueba'>
+                    <div className='mt-3 border rounded widget bg-white d-flex align-items-center justify-content-evenly' style={{padding: "15px"}}>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp19TXD1dJBK0V7HJ7MO9fp5Mv4UIb2KJdBA&usqp=CAU" alt="" height="70"/>
+                        <h4>Rocchio Propiedades</h4>
+                    </div>
+                    <FormPropiedad/>
+                 </div>
+                 
              </div>
              <div className='py-5'>
                  <h4 className='px-3 text-center'>Propiedades similares</h4>
