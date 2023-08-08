@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <div className='container-xl py-5'>
           <div className='d-flex justify-content-between align-items-center'>
-            <h3 className='ps-5'>Propiedades Destacadas</h3>
+            <h3 className='ps-5'>Nuevos Ingresos</h3>
             <div className='d-flex gap-2 align-items-center mt-3 pe-5 me-2 '>
               <p className='text-dark'>Ver todas <FontAwesomeIcon className='ms-2' icon={faArrowRight}></FontAwesomeIcon></p> 
             </div>
@@ -51,7 +51,7 @@ export default function Home() {
       <div id="projects" className="cards-2 pt-2 pb-4 bg-light">
             <div className="container-fluid">
                 <div className="d-flex flex-column text-center">
-                    <h3 className="mb-1">Novedades y Tips</h3>
+                    <h3 className="mb-1">Nuestro Blog de Notas</h3>
                     <p>Revisa las últimas novedades de nuestro blog.</p>
                 </div>
                 <div className="d-flex row gap-3 justify-content-center py-3 mx-1">

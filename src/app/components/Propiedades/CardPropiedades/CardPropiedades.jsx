@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./cardPropiedades.css"
-import { faBath, faBed, faCar, faHouse, faRulerVertical } from '@fortawesome/free-solid-svg-icons';
+import { faBath, faBed, faCar, faHouse, faLocationDot, faMapLocationDot, faRulerVertical } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -58,6 +58,9 @@ function CardPropiedades(props) {
                 </div>
                 <div className='cardPropiedadesContacto'>
                   <div className='d-flex gap-2'>
+                    <button className='btn-location'>
+                      <FontAwesomeIcon icon={faMapLocationDot}/>
+                    </button>
                     <button className='btn-envelope'>
                       <FontAwesomeIcon icon={faEnvelope}/>
                     </button>

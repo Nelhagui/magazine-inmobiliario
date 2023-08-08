@@ -51,20 +51,21 @@ export const noticias = [
 
 export const cajitas = [
     {
-        title: "Construcción"
-    },
-    {
-        title: "Est. Arquitectura"
-    },
-    {
         title: "Inmobiliarias"
     },
     {
-        title: "Mantenimiento"
+        title: "Construcción"
     },
     {
         title: "Profesionales"
     },
+    {
+        title: "Gastronomía"
+    },
+    {
+        title: "Bienestar y Salud"
+    },
+
 ]
 
 export const tiposPropiedad = ["Deptos", "Casas", "PHs", "Duplex o Triplex", "Galpones o depósitos", "Locales", "Fondos de comercio", "Lotes", "Cocheras", "Oficinas", "Negocio especial"]

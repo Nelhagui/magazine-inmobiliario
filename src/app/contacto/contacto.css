@@ -1,5 +1,34 @@
+.contacto-brands a, .contacto-brands .fa-whatsapp, .contacto-icons a {
+    color: #707a88;
+    text-decoration: none;
+}
+
+.contacto-brands .fa-whatsapp:hover {
+    color: #25D366
+}
+
+.contacto-brands .fa-instagram:hover {
+    color: #d6249f;
+}
+
+.contacto-brands .fa-facebook:hover {
+    color: #3b5998
+}
+
+.contacto-brands .fa-youtube:hover {
+    color: #c4302b
+}
+
+.contacto-brands .fa-tiktok:hover, .contacto-icons a:hover {
+    color: #000
+}
+
+.contacto-brands {
+    cursor: pointer;
+}
+
 @media (max-width: 910px) {
-    .contacto .contacto-icons p {
+    .contacto .contacto-icons a {
         font-size: 13px;
     }
 }

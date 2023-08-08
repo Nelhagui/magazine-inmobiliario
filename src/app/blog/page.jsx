@@ -23,9 +23,9 @@ function Blog() {
         <Pagination />
       </div>
       <div className="col-lg-4 col-md-5 col-12 blog-sidebar">
-        <SidebarNews title="Las más Leídas"/>
-        <SidebarNews title="Últimas Noticias"/>
         <SidebarCategorias/>
+        <SidebarNews title="Últimas Noticias"/>
+        <SidebarNews title="Las más Leídas"/>
       </div>
     </div>
   </div>
