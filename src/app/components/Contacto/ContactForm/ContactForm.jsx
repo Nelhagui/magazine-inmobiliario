@@ -21,7 +21,7 @@ function ContactForm() {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
     return (
-        <form onSubmit={handleSubmit} className='bg-white form-comentarios col-md-6 col-sm-12 rounded bordered padding-30 mt-3'>
+        <form onSubmit={handleSubmit} className='bg-white form-comentarios col-xl-6 col-md-10 col-sm-12 rounded bordered padding-30 mt-3'>
             <p className="comment-form-author">
                 <label htmlFor="author">Nombre 
                     <span className="required"> *</span>

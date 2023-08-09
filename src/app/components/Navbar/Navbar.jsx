@@ -19,7 +19,7 @@ function Navbar() {
             <img className="d-none d-xl-inline-block" src="./logo.png" alt="Magazine Inmobiliario" width="140" placeholder="blur" blurdataurl={'./logo.png'} />
           </a>
         </div>
-        <ul className="d-none col-9 d-md-flex justify-content-end my-auto">
+        <ul className="d-none col-9 d-xl-flex justify-content-end my-auto">
           <li className="nav-item p-3">
             <Link className="nav-link" href="/">
               Home
@@ -76,8 +76,8 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="mobile-toggler d-md-none text-end nav-border" style={{maxHeight: "55px"}}>
-        <a className="d-md-none nav-border" data-bs-toggle="offcanvas" href="#mobile-nav" role="button" aria-controls="mobile-nav">
+      <div className="mobile-toggler d-xl-none text-end nav-border" style={{maxHeight: "55px"}}>
+        <a className="d-xl-none nav-border" data-bs-toggle="offcanvas" href="#mobile-nav" role="button" aria-controls="mobile-nav">
             <div className="hamburger-lines p-3">
               <span className="line line1"></span>
               <span className="line line2"></span>
