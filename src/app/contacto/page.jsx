@@ -24,11 +24,11 @@ function Contacto() {
             <a href="/"><FontAwesomeIcon icon={faEnvelope} className='pe-2 fs-5'/>contacto@magazineinmobiliario.com.ar</a>   
           </div>
           <div className='d-flex gap-3 contacto-brands'>
-            <a href="/"><FontAwesomeIcon className="fs-4" icon={faTiktok}/></a>
-            <a href="/"><FontAwesomeIcon className="fs-4" icon={faYoutube}/></a>
-            <a href="/"><FontAwesomeIcon className="fs-4" icon={faFacebook}/></a>
+            <a href="https://www.tiktok.com/@magazine.inmobiliario"><FontAwesomeIcon className="fs-4" icon={faTiktok}/></a>
+            <a href="https://www.youtube.com/channel/UCdanG5rtUJFehZ9zgZcGohg"><FontAwesomeIcon className="fs-4" icon={faYoutube}/></a>
+            <a href="https://www.facebook.com/people/Magazine-Inmobiliario/100064423220442/?paipv=0&eav=Afb_68nA_qNdngdquGytsH_u7zqz66SVIkKDX-yl2BFj_0CX5mddIvCd1fFutPzxscc&_rdr"><FontAwesomeIcon className="fs-4" icon={faFacebook}/></a>
             <a href="/"><FontAwesomeIcon className="fs-4" icon={faWhatsapp}/></a>
-            <a href="/"><FontAwesomeIcon className="fs-4" icon={faInstagram}/></a>
+            <a href="https://www.instagram.com/apicemagazineinmobiliario/?hl=es-la"><FontAwesomeIcon className="fs-4" icon={faInstagram}/></a>
           </div>
           
         </div>

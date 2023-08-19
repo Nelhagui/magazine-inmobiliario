@@ -24,7 +24,7 @@ function Blog() {
       </div>
       <div className="col-lg-4 col-md-5 col-12 blog-sidebar">
         <SidebarCategorias/>
-        <SidebarNews title="Últimas Noticias"/>
+        <SidebarNews title="Últimas Notas"/>
         <SidebarNews title="Las más Leídas"/>
       </div>
     </div>

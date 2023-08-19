@@ -49,7 +49,6 @@ function TabPropiedades() {
                 <FontAwesomeIcon className="ps-1" icon={faHandshake} />
                 <select className="customSelect" aria-label="Default select example" value={operacionSeleccionada} defaultValue={"placeholder"} onChange={(e) => setOperacionSeleccionada(e.target.value)}>
                     <option disabled value={"placeholder"}>Operación</option>
-                    <option value={"small"}>Compra</option>
                     <option value={"big"}>Venta</option>
                     <option value={"big"}>Alquiler</option>
                 </select>

@@ -68,13 +68,10 @@ function FiltrosPropiedades() {
         </button>
         <ul className="dropdown-menu">
           <li>
-            <button className="dropdown-item" type="button">Alquilar</button>
+            <button className="dropdown-item" type="button">Venta</button>
           </li>
           <li>
-            <button className="dropdown-item" type="button">Comprar</button>
-          </li>
-          <li>
-            <button className="dropdown-item" type="button">Temporal</button>
+            <button className="dropdown-item" type="button">Alquiler</button>
           </li>
         </ul>
       </div>

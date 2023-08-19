@@ -50,8 +50,8 @@ export default function Home() {
           </div>
       </div>
       <div id="projects" className="cards-2 pt-2 pb-4 bg-light">
-            <div className="container-fluid">
-                <div className="d-flex flex-column text-center">
+            <div className="container-fluid container-xl ">
+                <div className="d-flex flex-column ps-5 pt-2">
                     <h3 className="mb-1">Nuestro Blog de Notas</h3>
                     <p>Revisa las últimas novedades de nuestro blog.</p>
                 </div>
